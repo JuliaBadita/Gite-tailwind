@@ -21,10 +21,11 @@
 
   <!--Links for Tailwind CSS-->
 
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
  
    <meta name="theme-color" content="#fafafa">
 </head>
@@ -148,70 +149,109 @@
 
   <!-- Timeline Travaux -->
 
-<section>
-  <ol class="border-l border-gray-300 m-10">
+<section class="mx-11">
+  <ol class="border-l border-gray-300">
+
+    <!-- Item 1 -->
+
     <li>
       <article class="flex flex-start items-center pt-3">
         <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
         <p class="text-gray-500 text-sm">01.05.2007</p>
       </article>
       <article class="mt-0.5 ml-4 mb-6">
-          <img src="./assets/img/history/travaux5.jpg" class="h-3/4 w-4/5" alt="">
+        <figure>
+          <img src="./assets/img/history/travaux5.jpg" class="h-1/2 w-1/2 object-cover"  data-bs-toggle="modal" data-bs-target="#exampleModalLg" alt="">
+        </figure>  
         <h4 class="text-gray-800 font-semibold text-xl mb-1.5">Début des travaux</h4>
         <p class="text-gray-500 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula.</p>
       </article >
     </li>
+
+    <!-- Modal -->
+
+<article class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto" id="exampleModalLg" tabindex="-1" aria-labelledby="exampleModalLgLabel" aria-modal="true" role="dialog">
+  <div class="modal-dialog modal-lg relative w-auto pointer-events-none">
+    <div class="modal-content border-none shadow-lg relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+      <div class="modal-header flex flex-shrink-0 items-center justify-between p-2 border-b border-gray-200 rounded-t-md">
+        <button type="button"
+          class="btn-close box-content w-4 h-4 p-1 text-black border-none rounded-none focus:shadow-none focus:outline-none focus:opacity-100 hover:text-black hover:opacity-75 hover:no-underline"
+          data-bs-dismiss="modal" aria-label="Close">
+      </button>
+      </div>
+      <figure>
+       <img src="./assets/img/history/travaux5.jpg" class="object-cover">
+      </figure>
+    </div>
+  </div>
+</article>
+
+
+    <!-- Item 2 -->
+
     <li>
       <article class="flex flex-start items-center pt-2">
         <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
         <p class="text-gray-500 text-sm">13.09.2007</p>
       </article>
       <article class="mt-0.5 ml-4 mb-6">
-          <img src="./assets/img/history/travaux1.jpg" class="h-1/2 w-1/2" alt="">
+          <img src="./assets/img/history/travaux1.jpg" class="h-1/2 w-1/2 object-cover" alt="">
         <h4 class="text-gray-800 font-semibold text-xl mb-1.5">Rénovation</h4>
         <p class="text-gray-500 mb-3">Libero expedita explicabo eius fugiat quia aspernatur autem laudantium error architecto recusandae natus sapiente sit nam eaque, consectetur porro molestiae ipsam an deleniti.</p>
       </article>
     </li>
+
+    <!-- Item 3 -->
+
     <li>
       <article class="flex flex-start items-center pt-2">
         <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
         <p class="text-gray-500 text-sm">25.11.2008</p>
       </article>
       <article class="mt-0.5 ml-4 pb-5">
-          <img src="./assets/img/history/travaux7.jpg" class="h-1/2 w-1/2" alt="">
+          <img src="./assets/img/history/travaux7.jpg" class="h-1/2 w-1/2 object-cover" alt="">
         <h4 class="text-gray-800 font-semibold text-xl mb-1.5">Pose des ardoises</h4>
         <p class="text-gray-500 mb-3">Voluptatibus temporibus esse illum eum aspernatur, fugiat suscipit natus! Eum corporis illum nihil officiis tempore. Excepturi illo natus libero sit doloremque, laborum molestias rerum pariatur quam ipsam necessitatibus incidunt, explicabo.</p>
       </article>
     </li>
+
+    <!-- Item 4 -->
+
     <li>
       <article class="flex flex-start items-center pt-2">
         <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
         <p class="text-gray-500 text-sm">25.11.2008</p>
       </article>
       <article class="mt-0.5 ml-4 pb-5">
-          <img src="./assets/img/history/travaux8.jpg" class="h-1/2 w-1/2" alt="">
+          <img src="./assets/img/history/travaux8.jpg" class="h-1/2 w-1/2 object-cover" alt="">
         <h4 class="text-gray-800 font-semibold text-xl mb-1.5">Pose des ardoises</h4>
         <p class="text-gray-500 mb-3">Voluptatibus temporibus esse illum eum aspernatur, fugiat suscipit natus! Eum corporis illum nihil officiis tempore. Excepturi illo natus libero sit doloremque, laborum molestias rerum pariatur quam ipsam necessitatibus incidunt, explicabo.</p>
       </article>
     </li>
+
+    <!-- Item 5 -->
+
     <li>
       <article class="flex flex-start items-center pt-2">
         <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
         <p class="text-gray-500 text-sm">25.11.2008</p>
       </article>
       <article class="mt-0.5 ml-4 pb-5">
-          <img src="./assets/img/history/travaux4.jpg" class="h-1/2 w-1/2" alt="">
+          <img src="./assets/img/history/travaux4.jpg" class="h-1/2 w-1/2 object-cover" alt="">
         <h4 class="text-gray-800 font-semibold text-xl mb-1.5">Pose des ardoises</h4>
         <p class="text-gray-500 mb-3">Voluptatibus temporibus esse illum eum aspernatur, fugiat suscipit natus! Eum corporis illum nihil officiis tempore. Excepturi illo natus libero sit doloremque, laborum molestias rerum pariatur quam ipsam necessitatibus incidunt, explicabo.</p>
       </article>
     </li>
+
+    <!-- Item 6 -->
+
     <li>
       <article class="flex flex-start items-center pt-2">
         <div class="bg-gray-300 w-2 h-2 rounded-full -ml-1 mr-3"></div>
         <p class="text-gray-500 text-sm">25.11.2008</p>
       </article>
       <article class="mt-0.5 ml-4 pb-5">
-          <img src="./assets/img/history/travaux9.jpg" class="h-1/2 w-1/2" alt="">
+          <img src="./assets/img/history/travaux9.jpg" class="h-1/2 w-1/2 object-cover" alt="">
         <h4 class="text-gray-800 font-semibold text-xl mb-1.5">Pose des ardoises</h4>
         <p class="text-gray-500 mb-3">Voluptatibus temporibus esse illum eum aspernatur, fugiat suscipit natus! Eum corporis illum nihil officiis tempore. Excepturi illo natus libero sit doloremque, laborum molestias rerum pariatur quam ipsam necessitatibus incidunt, explicabo.</p>
       </article>
