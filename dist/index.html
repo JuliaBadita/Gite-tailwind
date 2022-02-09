@@ -37,8 +37,8 @@
 
   <!-- Header -->
    
-    <header class="items-center relative bg-[#8f4843] hidden lg:flex space-x-1">
-      <img class="object-cover w-full h-60 opacity-40" src="./assets/img/Navbar/gite-header.jpg">
+    <header class="items-center relative bg-[#8f4843] hidden lg:flex space-x-1 z-0">
+      <img class="object-cover w-full h-60 opacity-40 z-0" src="./assets/img/Navbar/gite-header.jpg">
   
 
     <article class="absolute top-20 left-16 text-white font-semibold">
@@ -48,11 +48,10 @@
         <span class="">27480 Lorleau</span></p>
     </article> 
 
-    <article class="absolute top-20 inset-x-1/2 font-semibold">
+    <article class="absolute top-20 inset-x-1/2">
 
       <!-- Img Logo ici -->
-      <img src="./assets/img/Navbar/home-solid.svg" class="absolute">
-      <span class="overline text-white">Gîte La Forlane</span>
+      <img src="./assets/img/Navbar/Forlane-logo-03.svg" class="absolute z-50">
     </article>
    
     <article class="absolute text-right top-20 right-16 text-white font-semibold">
@@ -301,37 +300,41 @@
 
   <!-- Carousel button -->
 
-          <div class="">
-              <a href="#" class="">Découvrez La Forlane</a>
-          </div>
+  <article class="text-center mb-10">
+    <button type="button" class="inline-block px-6 py-2 my-6 border-2 border-red-600 text-red-600 font-bold text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+        <a href="#" title="Décuvrez La Forlane">Découvrez La Forlane</a>
+      </button>
+</article>
   
       <!-- fin carrousel -->
       
 
      <!-- presentation -->
-     <section class="container_intro">
-      <article class="row mx-0 my-5 broken-grid_wrap broken-grid_align-lt">
-        <section class="col-md-12 col-lg-7 broken-grid_item broken-grid_underlay">
-          <!-- img retiree -->
-        </section>
-        <div class="col-md-12 col-lg-6 broken-grid_item broken-grid_overlay">
-          <h2 class="mb-3">Douceur et confort</h2>
+
+      <section class="mx-20 my-5">
+        <!-- <article class="col-md-12 col-lg-7 broken-grid_item broken-grid_underlay">
+          // img retirée //
+        </article> -->
+        <article class="">
+          <h2 class="text-center font-bold text-2xl mb-1">Douceur et confort</h2>
           <p class="my-4">
             Un hameau au coeur de la forêt de Lyons, la vraie campagne normande avec ses herbages, ses vergers de pommiers et ses vaches, et cette longère pleine de charme. 
             Passez le portail et posez les valises ! Vous arrivez dans le très joli jardin que Maria et Jean-Luc peaufinent au fil des années avec de beaux espaces paysagers, tout en pensant à vos vacances.<br>
             <br>A l'intérieur, vous serez séduits par l'esprit maison de famille : la déco est vraiment réussie (brocante, objets détournés et meubles d'antiquaires) et créé une ambiance très chaleureuse dans des tons chauds. Grand confort et équipement sont au rendez-vous, tout comme l'espace, également généreux. Idéal pour un séjour en famille ou entre amis.
           </p>
           <p class="my-4">
-            Entrée au RDC sur la grande pièce de vie avec d'un côté le beau salon avec cheminée et bibliothèque et de l'autre, la cuisine salle-à-manger lumineuse et chaleureuse. Egalement une chambre (1 lit 2 pers), une salle d'eau et un wc indépendant.<br>
-            <br>A l'étage, desservi par 2 escaliers, 3 chambres mansardées (4 lits simples en grande longueur, 2 lits doubles en 160x200), salle de bains avec wc. Jeux extérieurs : ping-pong, badminton et portique, et pour l'intérieur, jeux de société et bibliothèque.<br>
-            <br>Profitez du superbe jardin clos de 1700 m² arboré : quiétude et bains de soleil. Parfait pour le repos avec des chaises longues, ou pour de bons moments de détente et espace loisirs avec les jeux ou tout simplement l'espace ! Belles balades alentour en perspective ou découverte des trésors touristiques et gastronomiques de la région.
+            Entrée <span class="font-semibold underline">au rez-de-chaussée</span> sur la grande pièce de vie avec d'un côté le beau salon avec cheminée et bibliothèque et de l'autre, la cuisine salle-à-manger lumineuse et chaleureuse. Egalement une chambre (1 lit 2 pers), une salle d'eau et un wc indépendant.<br>
+            <br><span class="font-semibold underline">A l'étage</span>, desservi par 2 escaliers, 3 chambres mansardées (4 lits simples en grande longueur, 2 lits doubles en 160x200), salle de bains avec wc. Jeux extérieurs : ping-pong, badminton et portique, et pour l'intérieur, jeux de société et bibliothèque.<br>
+            <br>Profitez du superbe <span class="font-semibold underline">jardin</span> clos de 1700 m² arboré : quiétude et bains de soleil. Parfait pour le repos avec des chaises longues, ou pour de bons moments de détente et espace loisirs avec les jeux ou tout simplement l'espace ! Belles balades alentour en perspective ou découverte des trésors touristiques et gastronomiques de la région.
           </p>
-        </div>
-        <div class="button-intro">
-          <a href="page-equipements" type="button" class="button-equipements">VOIR LES EQUIPEMENTS</a>
-        </div>
-      </article>
-    </section>
+        </article>
+        <article class="text-center mb-10">
+          <button type="button" class="inline-block px-6 py-2 border-2 border-red-600 text-red-600 font-bold text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+              <a href="#" title="Voir les équipements">Voir les équipements</a>
+            </button>
+       </article>
+      </section>
+
   <!-- fin presentation -->
 
   <!-- gallery -->
@@ -425,13 +428,11 @@
       </section>
       <!-- bouton acces vers la gallery -->
       <br>
-        <section class="text-center mb-10">
-            <div>
-                <button type="button" class="inline-block px-6 py-2 border-2 border-red-800 text-red-800 font-bold text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+        <article class="text-center mb-10">
+                <button type="button" class="inline-block px-6 py-2 border-2 border-red-600 text-red-600 font-bold text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
                     <a href="#" title="Visiter le rez-de-chaussee">Visiter le rez-de-chaussée de La Forlane</a>
                   </button>
-            </div>
-        </section>
+        </article>
 
     <!-- fin container page -->
   </section>  
@@ -483,8 +484,10 @@
 
     <article> 
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.8124878940007!2d1.5165565206315477!3d49.43135896346857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e72951f919d7af%3A0x2e8f63840be0ba18!2sLa%20Forlane!5e0!3m2!1sfr!2sfr!4v1642605530865!5m2!1sfr!2sfr" class="w-full h-80 px-20 my-6"></iframe>
-      <p class="ml-6 mr-6 mb-8"><span class="font-semibold underline">De Paris</span>, deux itinéraires sont possibles : - A13 direction <span class="text-[#8f4843]">Rouen</span> - Tunnel de <span class="text-[#8f4843]">Saint Cloud</span> - Péage à <span class="text-[#8f4843]">Mantes</span> - Sortie 17 <span class="text-[#8f4843]">Gaillon, Les Andelys, Lyons la Forêt</span>. A <span class="text-[#8f4843]">Lyons</span> prendre direction <span class="text-[#8f4843]">Forges les Eaux</span> et à la sortie de <span class="text-[#8f4843]">Lyons</span>, prendre à droite <span class="text-[#8f4843]">Lorleau</span> puis <span class="text-[#8f4843]">Saint Crépin</span> D132 (5 km).<br> - Sortir de <span class="text-[#8f4843]">Paris</span> par A86 puis A15 vers <span class="text-[#8f4843]">Pontoise</span> puis N14 <span class="text-[#8f4843]">Pontoise-Rouen</span>. A <span class="text-[#8f4843]">Ecouis</span>, prendre à droite vers <span class="text-[#8f4843]">Lyons la Forêt</span> puis <span class="text-[#8f4843]">Lorleau</span> et <span class="text-[#8f4843]">Saint Crépin</span>. <br> 
-          <br><span class="font-semibold underline">De Lille</span>, l'itinéraire le plus court : - A1 jusque sortie <span class="text-[#8f4843]">Roye</span> puis <span class="text-[#8f4843]">Montdidier</span>, <span class="text-[#8f4843]">Breteuil</span>, <span class="text-[#8f4843]">Crévecoeur le Grand</span>, <span class="text-[#8f4843]">Marseille en Beauvaisie</span>, <span class="text-[#8f4843]">Gournay en Bray</span>. A <span class="text-[#8f4843]">Gournay</span> prendre la direction de <span class="text-[#8f4843]">Rouen</span> par la N31 et à <span class="text-[#8f4843]">La Feuillie</span> prendre la direction de <span class="home__map-paragraph-span">Fleurit le</span>.</p>
+      <p class="mx-20 mb-8 text-sm"><span class="font-semibold underline">
+        De Paris</span>, deux itinéraires sont possibles : <br>
+        - A13 direction <span class="text-[#8f4843]">Rouen</span> - Tunnel de <span class="text-[#8f4843]">Saint Cloud</span> - Péage à <span class="text-[#8f4843]">Mantes</span> - Sortie 17 <span class="text-[#8f4843]">Gaillon, Les Andelys, Lyons la Forêt</span>. A <span class="text-[#8f4843]">Lyons</span> prendre direction <span class="text-[#8f4843]">Forges les Eaux</span> et à la sortie de <span class="text-[#8f4843]">Lyons</span>, prendre à droite <span class="text-[#8f4843]">Lorleau</span> puis <span class="text-[#8f4843]">Saint Crépin</span> D132 (5 km).<br> - Sortir de <span class="text-[#8f4843]">Paris</span> par A86 puis A15 vers <span class="text-[#8f4843]">Pontoise</span> puis N14 <span class="text-[#8f4843]">Pontoise-Rouen</span>. A <span class="text-[#8f4843]">Ecouis</span>, prendre à droite vers <span class="text-[#8f4843]">Lyons la Forêt</span> puis <span class="text-[#8f4843]">Lorleau</span> et <span class="text-[#8f4843]">Saint Crépin</span>. <br> 
+          <br><span class="font-semibold underline">De Lille</span>, l'itinéraire le plus court : <br> - A1 jusque sortie <span class="text-[#8f4843]">Roye</span> puis <span class="text-[#8f4843]">Montdidier</span>, <span class="text-[#8f4843]">Breteuil</span>, <span class="text-[#8f4843]">Crévecoeur le Grand</span>, <span class="text-[#8f4843]">Marseille en Beauvaisie</span>, <span class="text-[#8f4843]">Gournay en Bray</span>. A <span class="text-[#8f4843]">Gournay</span> prendre la direction de <span class="text-[#8f4843]">Rouen</span> par la N31 et à <span class="text-[#8f4843]">La Feuillie</span> prendre la direction de <span class="home__map-paragraph-span">Fleurit le</span>.</p>
       </article>
 
   <!-- fin map -->
@@ -725,7 +728,7 @@
       <!-- pictos reseaux -->
       <article class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
           <!-- facebook -->
-          <a href="#" class="text-white hover:text-gray-200 dark:hover:text-white">
+          <a href="https://www.facebook.com/La-Forlane-504084072966711/?ref=page_internal" class="text-white hover:text-gray-200 dark:hover:text-white">
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg>
           </a>
           <!-- instagram -->
