@@ -18,13 +18,15 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
 
- 
+
   <!--Links for Tailwind CSS-->
 
-  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/flowbite@1.3.3/dist/flowbite.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 
 
    <meta name="theme-color" content="#fafafa">
@@ -33,76 +35,115 @@
 
 <body class="font-sans">
 
+  <!-- Header -->
+   
+    <header class="items-center relative bg-[#8f4843] hidden lg:flex space-x-1">
+      <img class="object-cover w-full h-60 opacity-50" src="./assets/img/Navbar/gite-header.jpg">
+  
 
-  <nav class="
-  relative
-  w-full
-  flex flex-wrap
-  items-center
-  justify-between
-  py-4
-  bg-gray-100
-  text-gray-500
-  hover:text-gray-700
-  focus:text-gray-700
-  shadow-lg
-  navbar navbar-expand-lg navbar-light
-  ">
-  <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
-  <button class="
-      navbar-toggler
-      text-gray-500
-      border-0
-      hover:shadow-none hover:no-underline
-      py-2
-      px-2.5
-      bg-transparent
-      focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline
-    " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
-    class="w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512">
-    <path fill="currentColor"
-      d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
-    </path>
-  </svg>
-  </button>
-  <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
-  <a class="text-xl text-black" href="index.html">Accueil</a>
-  <!-- Left links -->
-  <ul class="navbar-nav flex flex-col pl-0 list-style-none mr-auto">
-    <li class="nav-item px-2">
-      <a class="nav-link active" aria-current="page" href="#">Equipements</a>
-    </li>
-    <li class="nav-item pr-2">
-      <a class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="#">Galerie Photos</a>
-    </li>
-    <li class="nav-item pr-2">
-      <a class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="history.html">Histoire du gîte</a>
-    </li>
-    <li class="nav-item pr-2">
-      <a class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="#">Autour du gîte</a>
-    </li>
-    <li class="nav-item pr-2">
-      <a class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="#">Réservation</a>
-    </li>
-    <li class="nav-item pr-2">
-      <a class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="#">Contact</a>
-    </li>
-  </ul>
-  <!-- Left links -->
-  </div>
-  <!-- Collapsible wrapper -->
-  </div>
-    </nav>
+    <article class="absolute top-20 left-16 text-white font-semibold">
+      <p>
+        <span class="">7 rue Bernard Buffet</span><br>
+        <span class="">Hameau St Crépin</span><br>
+        <span class="">27480 Lorleau</span></p>
+    </article> 
+
+    <article class="absolute top-20 inset-x-1/2 font-semibold">
+
+      <!-- Img Logo ici -->
+      <img src="./assets/img/Navbar/home-solid.svg" class="absolute">
+      <span class="overline text-white">Gîte La Forlane</span>
+    </article>
+   
+    <article class="absolute text-right top-20 right-16 text-white font-semibold">
+      <p> Jean-Luc et Maria<br>
+        <span class=""><a href="tel:+33603499244">06 03 49 92 44</a></span><br>
+        <span class=""><a href="mailto:gite.laforlane@gmail.com">gite.laforlane@gmail.com</a></span></p>
+    </article>  
+
+  </header> 
+
+  <!-- Navbar -->
+
+  <nav class="bg-[#8f4843] shadow-lg mb-10">
+    <section class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-center">
+        <div class="flex space-x-7">
+
+          <!-- <div> -->
+            <!-- Website Logo -->
+            <!-- <a href="#" class="flex items-center py-4 px-2"> -->
+              <!-- <img src="logo.png" alt="Logo" class="h-8 w-8 mr-2"> -->
+            <!-- </a> -->
+          <!-- </div> -->
+
+          <!-- Primary Navbar items -->
+          <article class="hidden lg:flex items-center space-x-1">
+            <a href="index.html" class="p-7 px-3 text-black bg-[#cfc85f]  font-semibold ">Accueil</a>
+            <a href="" class=" py-7 px-3 text-white font-semibold hover:bg-black  transition duration-300">Equipements</a>
+            <a href="" class="p-7 px-3 text-white font-semibold hover:bg-black  transition duration-300">Galerie Photos</a>
+            <a href="history.html" class="p-7 px-3 text-white font-semibold hover:bg-black transition duration-300">Histoire du gîte</a>
+            <a href="" class="p-7 px-3 text-white font-semibold hover:bg-black transition duration-300">Autour du gîte</a>
+            <a href="" class="p-7 px-3 text-white font-semibold hover:bg-black transition duration-300">Réservation</a>
+            <a href="" class="p-7 px-3 text-white font-semibold hover:bg-black transition duration-300">Contact</a>
+          </article>
+        </div>
+      </div>
+
+       <!-- Mobile menu button -->
+       <article class="lg:hidden flex items-center">
+        <button class="outline-none mobile-menu-button">
+        <svg class=" w-6 h-6 text-white hover:text-[#cfc85f]"
+          x-show="!showMenu"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewbox="0 0 24 24"
+          stroke="currentColor">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      </article>
+    </section>
+
+    <!-- mobile menu -->
+    <article class="hidden mobile-menu">
+      <ul class="">
+        <li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-black bg-[#cfc85f] font-semibold"> Accueil du Gîte La Forlane</a></li>
+        <li><a href="#services" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300">Equipements</a></li>
+        <li><a href="#about" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300">Galerie Photos</a></li>
+        <li><a href="history.html" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300">Histoire du Gîte</a></li>
+        <li><a href="#contact" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300">Autour du Gîte</a></li>
+        <li><a href="#contact" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300">Réservation</a></li>
+        <li><a href="#contact" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300">Contact</a></li>
+      </ul>
+    </article>
+  </nav>
+
 
   <!-- fin NAVBAR --> 
+
+  <!--Fil d'Ariane-->
+
+  <article class="flex my-3 mx-7" aria-label="Breadcrumb">
+    <ol class="inline-flex items-center space-x-1 md:space-x-3">
+    <li class="inline-flex items-center">
+    <a href="index.html" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+    <svg class="mr-2 w-4 h-4" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+    Accueil Gîte La Forlane
+    </a>
+    </li>
+    </ol>
+    </article>
 
   <main>
 
       <!--Home Carousel-->
 
       <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+
+        <!-- Buttons slider carousel -->
         <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
           <button
             type="button"
@@ -143,74 +184,101 @@
             aria-label="Slide 6"
           ></button>
         </div>
+
+        <!-- Item 1 Carousel -->
         <div class="carousel-inner relative w-full overflow-hidden">
           <div class="carousel-item active relative float-left w-full h-screen">
+        <figure>
             <img
               src="assets/img/home/jardin.jpg"
               class="block w-full"
               alt="..."
             />
+        </figure>    
             <div class="carousel-caption hidden md:block absolute text-center">
               <h5 class="text-xl">Le charme de la Normandie avec convivialité et classe</h5>
               <p></p>
             </div>
           </div>
+
+          <!-- Item 2 Carousel -->
           <div class="carousel-item relative float-left w-full h-screen">
+        <figure>  
             <img
               src="assets/img/home/salle-a-manger.jpg"
               class="block w-full"
               alt="..."
             />
+        </figure>    
             <div class="carousel-caption hidden md:block absolute text-center">
               <h5 class="text-xl">Second slide label</h5>
               <p>Le charme de la Normandie avec convivialité et classe</p>
             </div>
           </div>
+
+          <!-- Item 3 Carousel -->
           <div class="carousel-item relative float-left w-full h-screen">
+          <figure>
             <img
               src="assets/img/home/salon.jpg"
               class="block w-full"
               alt="..."
             />
+          </figure>  
             <div class="carousel-caption hidden md:block absolute text-center">
               <h5 class="text-xl">Third slide label</h5>
               <p>Le charme de la Normandie avec convivialité et classe</p>
             </div>
           </div>
+
+          <!-- Item 4 Carousel -->
           <div class="carousel-item relative float-left w-full h-screen">
+        <figure>
             <img
               src="assets/img/home/gite-nuit.jpg"
               class="block w-full"
               alt="..."
             />
+        </figure>    
             <div class="carousel-caption hidden md:block absolute text-center">
               <h5 class="text-xl">Fourth slide label</h5>
               <p>Le charme de la Normandie avec convivialité et classe</p>
             </div>
           </div>
+
+          <!-- Item 5 Carousel -->
           <div class="carousel-item relative float-left w-full h-screen">
+        <figure>
             <img
               src="assets/img/home/gite-nuit.jpg"
               class="block w-full"
               alt="..."
             />
+        </figure>    
             <div class="carousel-caption hidden md:block absolute text-center">
               <h5 class="text-xl">Fourth slide label</h5>
               <p>Le charme de la Normandie avec convivialité et classe</p>
             </div>
           </div>
+
+          <!-- Item 6 Carousel -->
           <div class="carousel-item relative float-left w-full h-screen">
+        <figure>
             <img
               src="assets/img/home/gite-img.jpg"
               class="block w-full"
               alt="..."
             />
+        </figure>    
             <div class="carousel-caption hidden md:block absolute text-center">
               <h5 class="text-xl">Fourth slide label</h5>
               <p>Le charme de la Normandie avec convivialité et classe</p>
             </div>
           </div>
         </div>
+
+
+        <!-- Buttons slider carousel -->
         <button
           class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
           type="button"
@@ -233,26 +301,13 @@
 
   <!-- Carousel button -->
 
-          <div class="home__carousel-button-container">
-              <a href="#" class="home__carousel-button">Découvrez La Forlane</a>
+          <div class="">
+              <a href="#" class="">Découvrez La Forlane</a>
           </div>
-
   
       <!-- fin carrousel -->
-
-       <!--Fil d'Ariane-->
-
-       <article class="flex" aria-label="Breadcrumb">
-        <ol class="inline-flex items-center space-x-1 md:space-x-3">
-        <li class="inline-flex items-center">
-        <a href="index.html" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
-        <svg class="mr-2 w-4 h-4" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
-        Accueil Gîte La Forlane
-        </a>
-        </li>
-        </ol>
-        </article>
       
+
      <!-- presentation -->
      <section class="container_intro">
       <article class="row mx-0 my-5 broken-grid_wrap broken-grid_align-lt">
@@ -363,14 +418,16 @@
 </section>
   <!-- fin articles -->
 
+  
   <!-- map -->
-  <section class="principale_map">
+
+
     <article> 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.8124878940007!2d1.5165565206315477!3d49.43135896346857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e72951f919d7af%3A0x2e8f63840be0ba18!2sLa%20Forlane!5e0!3m2!1sfr!2sfr!4v1642605530865!5m2!1sfr!2sfr" class="home__map" allowfullscreen="" loading="lazy"></iframe>
-      <p class="home__map-paragraph"><span class="home__map-paragraph-bold">De Paris</span>, deux itinéraires sont possibles : - A13 direction <span class="home__map-paragraph-span">Rouen</span> - Tunnel de <span class="home__map-paragraph-span">Saint Cloud</span> - Péage à <span class="home__map-paragraph-span">Mantes</span> - Sortie 17 <span class="home__map-paragraph-span">Gaillon, Les Andelys, Lyons la Forêt</span>. A <span class="home__map-paragraph-span">Lyons</span> prendre direction <span class="home__map-paragraph-span">Forges les Eaux</span> et à la sortie de <span class="home__map-paragraph-span">Lyons</span>, prendre à droite <span class="home__map-paragraph-span">Lorleau</span> puis <span class="home__map-paragraph-span">Saint Crépin</span> D132 (5 km).<br> - Sortir de <span class="home__map-paragraph-span">Paris</span> par A86 puis A15 vers <span class="home__map-paragraph-span">Pontoise</span> puis N14 <span class="home__map-paragraph-span">Pontoise-Rouen</span>. A <span class="home__map-paragraph-span">Ecouis</span>, prendre à droite vers <span class="home__map-paragraph-span">Lyons la Forêt</span> puis <span class="home__map-paragraph-span">Lorleau</span> et <span class="home__map-paragraph-span">Saint Crépin</span>. <br> 
-          <br><span class="home__map-paragraph-bold">De Lille</span>, l'itinéraire le plus court : - A1 jusque sortie <span class="home__map-paragraph-span">Roye</span> puis <span class="home__map-paragraph-span">Montdidier</span>, <span class="home__map-paragraph-span">Breteuil</span>, <span class="home__map-paragraph-span">Crévecoeur le Grand</span>, <span class="home__map-paragraph-span">Marseille en Beauvaisie</span>, <span class="home__map-paragraph-span">Gournay en Bray</span>. A <span class="home__map-paragraph-span">Gournay</span> prendre la direction de <span class="home__map-paragraph-span">Rouen</span> par la N31 et à <span class="home__map-paragraph-span">La Feuillie</span> prendre la direction de <span class="home__map-paragraph-span">Fleurit le</span>.</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.8124878940007!2d1.5165565206315477!3d49.43135896346857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e72951f919d7af%3A0x2e8f63840be0ba18!2sLa%20Forlane!5e0!3m2!1sfr!2sfr!4v1642605530865!5m2!1sfr!2sfr" class="w-full h-80 px-20 my-6"></iframe>
+      <p class="ml-6 mr-6 mb-8"><span class="font-semibold underline">De Paris</span>, deux itinéraires sont possibles : - A13 direction <span class="text-[#8f4843]">Rouen</span> - Tunnel de <span class="text-[#8f4843]">Saint Cloud</span> - Péage à <span class="text-[#8f4843]">Mantes</span> - Sortie 17 <span class="text-[#8f4843]">Gaillon, Les Andelys, Lyons la Forêt</span>. A <span class="text-[#8f4843]">Lyons</span> prendre direction <span class="text-[#8f4843]">Forges les Eaux</span> et à la sortie de <span class="text-[#8f4843]">Lyons</span>, prendre à droite <span class="text-[#8f4843]">Lorleau</span> puis <span class="text-[#8f4843]">Saint Crépin</span> D132 (5 km).<br> - Sortir de <span class="text-[#8f4843]">Paris</span> par A86 puis A15 vers <span class="text-[#8f4843]">Pontoise</span> puis N14 <span class="text-[#8f4843]">Pontoise-Rouen</span>. A <span class="text-[#8f4843]">Ecouis</span>, prendre à droite vers <span class="text-[#8f4843]">Lyons la Forêt</span> puis <span class="text-[#8f4843]">Lorleau</span> et <span class="text-[#8f4843]">Saint Crépin</span>. <br> 
+          <br><span class="font-semibold underline">De Lille</span>, l'itinéraire le plus court : - A1 jusque sortie <span class="text-[#8f4843]">Roye</span> puis <span class="text-[#8f4843]">Montdidier</span>, <span class="text-[#8f4843]">Breteuil</span>, <span class="text-[#8f4843]">Crévecoeur le Grand</span>, <span class="text-[#8f4843]">Marseille en Beauvaisie</span>, <span class="text-[#8f4843]">Gournay en Bray</span>. A <span class="text-[#8f4843]">Gournay</span> prendre la direction de <span class="text-[#8f4843]">Rouen</span> par la N31 et à <span class="text-[#8f4843]">La Feuillie</span> prendre la direction de <span class="home__map-paragraph-span">Fleurit le</span>.</p>
       </article>
-  </section>
+
   <!-- fin map -->
 
   <!-- avis -->
@@ -461,52 +518,172 @@
 </main>
 
 <!-- FOOTER -->
-<footer>
-<section class="footer-top">
-    <article class="container-footer">
-      <div class="row-footer">
-          <section class="col-md-3 col-sm-6 col-xs-12 segment-one md-mb-30 sm-mb-30">
-              <h3 class="entreprise">La Forlane</h3>
-              <p>Gîte de charme à Lorleau dans l'Eure, dans la campagne de Normandie proche de Lyons-la-Forêt.<br>
-              Réservez votre location de vacances dans un cadre chaleureux, agréable et stylé. Lieu de convivialité idéal pour les particuliers et les réunions de familles.
-              </p>
-          </section>
-          <section class="col-md-3 col-sm-6 col-xs-12 segment-two md-mb-30 sm-mb-30">
-              <h2>Autour du gîte</h2>
+<footer class="p-4 bg-[#8f4843] sm:p-6 dark:bg-gray-800">
+  <section class="md:flex md:justify-between">
+      <!-- logo ou nom -->
+      <article class="mb-6 md:mb-0">
+          <!--<a href="https://flowbite.com" target="_blank" class="flex items-center">
+          <img src="/docs/images/logo.svg" class="mr-4 h-10" alt="FlowBite Logo">-->
+          <span class="self-center text-4xl text-white font-semibold whitespace-nowrap dark:text-white">
+              La Forlane<br>
+          </span>
+          <span class="self-center text-base text-white font-semibold whitespace-nowrap dark:text-white">
+              Gîte normand<br>
+          </span>
+          <p class="mt-4 text-sm text-white font-medium whitespace-nowrap dark:text-white">
+              Gîte de charme à Lorleau dans l'Eure, dans la campagne <br>de Normandie proche de Lyons-la-Forêt.<br>
+                  Réservez votre location de vacances dans un cadre chaleureux, <br>agréable et stylé et prenez le temps de faire du tourisme ! <br>Lieu de convivialité idéal pour les particuliers et <br>les réunions de familles.
+                  
+          </p>
+      </article>
+      <!-- conteneur du texte -->
+      <section class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <!-- colonne autour -->
+          <article>
+              <h3 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Autour du gîte</h3>
               <ul>
-                  <li><a href="page-historique.html" alt="Historique-LaForlane" title="Historique-LaForlane">Historique de La Forlane</a></li>
-                  <li><a href="#">Activités loisirs & culture</a></li>
-                  <li><a href="#">Gastronomie locale</a></li>
-                  <li><a href="page-mentionslegales.html" alt="Mentions-Legales" title="Mentions-Legales">Mentions légales</a></li>
+                  <li class="mb-2 text-base">
+                      <a href="https://www.lyons-andelle-tourisme.com/sejourner/toutes-nos-brochures-en-ligne/" alt="Lyons-la-Forêt" target="_blank" class="text-white hover:underline dark:text-gray-400">
+                          Lyons-la-Forêt, tourisme
+                      </a>
+                  </li>
+                  <li  class="mb-2 text-base">
+                      <a href="https://tailwindcss.com/" target="_blank" rel="nofollow" class="text-white hover:underline dark:text-gray-400">
+                          Normandie Tourisme
+                      </a>
+                  </li>
+                  <li  class="mb-2 text-base">
+                      <a href="https://www.junobeach.org/fr/" target="_blank" rel="nofollow" class="text-white hover:underline dark:text-gray-400">
+                          Centre Juno Beach, memorial
+                      </a>
+                  </li>
+                  <li  class="mb-2 text-base">
+                      <a href="https://tailwindcss.com/" target="_blank" rel="nofollow" class="text-white hover:underline dark:text-gray-400">
+                          Activités culturelles
+                      </a>
+                  </li>
+                  <li  class="mb-2 text-base">
+                      <a href="https://tailwindcss.com/" target="_blank" rel="nofollow" class="text-white hover:underline dark:text-gray-400">
+                          Gastronomie
+                      </a>
+                  </li>
               </ul>
-          </section>
-          <section class="col-md-3 col-sm-6 col-xs-12 segment-three sm-mb-30">
-              <h2>Suivez-nous</h2>
-              <p>Retrouvez-nous sur les réseaux sociaux.</p>
-              <a href="https://www.facebook.com/La-Forlane-504084072966711/"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-              <p><br></p>
-              <h2>Gîtes de France</h2>
-              <p>
-              <img class="footer-gitesFrance" src="assets-pictos/GiteDeFrance_4Epis.png">
-              Depuis 2009.
-              </p>
-          </section>
-          <section class="col-md-3 col-sm-6 col-xs-12 segment-four sm-mb-30">
-              <h2>Contactez-nous</h2>
-              <p><img class="footer-image" src="assets/Forlane-001.jpg" title="Jean-Luc & Maria de La Forlane"><br>
-                La Forlane : Jean-Luc & Maria<br>Mail : <a href="mailto:gite.laforlane@gmail.com">gite.laforlane@gmail.com</a><br>Tel : <a href="tel:+33603499244">06 03 49 92 44</a></p>
-              <!-- a garder au cas où
-              <form action="#">
-                  <input type="email" class="mail-input">
-                  <input type="submit" value="s'abonner" required
-                  minlength="9" maxlength="35" size="10" pattern=".+@globex\.com">
-              </form>-->
-          </section>
-      </div>
-    </article>
+          </article>
+          <!-- colonne reference -->
+          <article>
+              <h3 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">
+              Nos références</h3>
+              <ul>
+              <li class="mb-2">
+              <a href="https://github.com/themesberg/flowbite" target="_blank" class="text-white hover:underline dark:text-white">
+                  France Voyage</a>
+              </li>
+              <li>
+              <a href="https://discord.gg/4eeurUVvTy" target="_blank" class="text-white hover:underline dark:text-white">
+                  Gîtes de France</a>
+              </li>
+              </ul>
+          </article>
+          <!-- contact -->
+          <article>
+              <h3 class="mb-6 text-sm font-semibold text-white uppercase dark:text-white">Contact</h3>
+              <ul>
+                  <li class="mb-4">
+                  <a href="#" target="_blank" class="text-white hover:underline dark:text-white">
+                      Adresse<br>La Forlane</a>
+                  </li>
+                  <li>
+                  <a href="#" target="_blank" class="text-white hover:underline dark:text-white">Email</a>
+                  </li>
+              </ul>
+          </article>
+      </section>
+  <!-- fin conteneur flex -->
   </section>
-  <p class="footer-bottom-text">2022 - La Forlane Gîte Normand à Lorleau (Eure) | <a href="page-mentionslegales.html" alt="Mentions-Legales" title="Mentions-Legales">Mentions légales</a> | &copy;Team Julia</p>
+
+  <!-- partie photos -->
+  <section class="container p-4 mt-4 justify-center">
+      <!-- zone photos -->
+      <article class="grid lg:grid-cols-6 md:grid-cols-3 gap-4">
+        <!-- img 1 -->
+        <section class="lg:mb-0 mb-2">
+          <img
+            src="assets/Forlane-006.jpg"
+            class="w-full rounded-none"
+          />
+        </section>
+        <!-- img 2 -->
+        <section class="lg:mb-0 mb-2">
+          <img
+            src="assets/Forlane-004.jpg"
+            class="w-full rounded-none"
+          />
+        </section>
+        <!-- img 3 -->
+        <section class="lg:mb-0 mb-2">
+          <img
+            src="assets/Forlane-015.jpg"
+            class="w-full rounded-none"
+          />
+        </section>
+        <!-- img 4 -->
+        <section class="lg:mb-0 mb-2">
+          <img
+            src="assets/Forlane-008.jpg"
+            class="w-full rounded-none"
+          />
+        </section>
+        <!-- img 5 -->
+        <section class="lg:mb-0 mb-2">
+          <img
+            src="assets/Forlane-016.jpg"
+            class="w-full rounded-none"
+          />
+        </section>
+        <!-- img 6 -->
+        <section class="lg:mb-0 mb-2">
+          <img
+            src="assets/Forlane-022.jpg"
+            class="w-full rounded-none"
+          />
+        </section>
+      </article>
+  </section>
+
+  <!-- fin partie photos -->
+
+  <!-- reseaux sociaux -->
+  <hr class="my-4 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-4">
+  <!-- credits -->
+  <section class="sm:flex sm:items-center sm:justify-between">
+      <span class="text-xs text-white sm:text-center dark:text-gray-200">© 2022 
+          <a href="https://flowbite.com" target="_blank" class="hover:underline">Flowbite™</a>
+          . All Rights Reserved. / La Forlane, JL Lecomte.
+      </span>
+      <!-- pictos reseaux -->
+      <article class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+          <!-- facebook -->
+          <a href="#" class="text-white hover:text-gray-200 dark:hover:text-white">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg>
+          </a>
+          <!-- instagram -->
+          <a href="#" class="text-white hover:text-gray-200 dark:hover:text-white">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path></svg>
+          </a>
+          <!-- twitter -->
+          <a href="#" class="text-white hover:text-gray-200 dark:hover:text-white">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+          </a>
+          <!-- github -->
+          <a href="#" class="text-white hover:text-gray-200 dark:hover:text-white">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path></svg>
+          </a>
+          <!-- dribble -->
+          <a href="#" class="text-white hover:text-gray-200 dark:hover:text-white">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd"></path></svg>
+          </a>
+      </article>
+  </section>
 
 </footer>
 <!-- fin FOOTER --> 
@@ -527,6 +704,17 @@
 }
 </script>
 <!-- Fin Scroll to Top button-->
+
+ <!-- For The Navbar -->
+
+ <script>
+  const btn = document.querySelector("button.mobile-menu-button");
+  const menu = document.querySelector(".mobile-menu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
