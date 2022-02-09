@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+
+<link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.3/dist/flowbite.min.css" />
+
+
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+  </style>
+  <script src="https://unpkg.com/flowbite@1.3.3/dist/flowbite.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</head>
+
+<body>
+
+  <section class="lg:content-auto">
+    <!-- on commence a coder ici -->
+    
+      <!-- titre -->
+      <section class="mx-24">
+      <h2 class="text-center font-bold text-2xl mb-1">Visite des pièces du gîte</h2>
+      
+    <!-- gallery photos -->
+    <section class="overflow-hidden text-gray-700 ">
+        <div class="container px-5 py-2 mx-auto lg:pt-6 lg:px-32">
+          <!-- 1ere ligne de photos -->
+          <div class="flex flex-wrap -m-1 md:-m-2">
+            <div class="flex flex-wrap w-1/3">
+              <div class="w-full p-1 md:p-2">
+                <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-lg"
+                  src="assets/forlane/Forlane-015.jpg">
+              </div>
+            </div>
+            <div class="flex flex-wrap w-1/3">
+              <div class="w-full p-1 md:p-2">
+                <img alt="Salle à manger" title="Salle à manger" class="block object-cover object-center w-full h-full rounded-lg"
+                  src="assets/forlane/Forlane-026.jpg">
+              </div>
+            </div>
+            <div class="flex flex-wrap w-1/3">
+              <div class="w-full p-1 md:p-2">
+                <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-lg"
+                  src="assets/forlane/Forlane-019.jpg">
+              </div>
+            </div>
+            <!-- 2eme ligne de photos -->
+            <div class="flex flex-wrap w-1/3">
+              <div class="w-full p-1 md:p-2">
+                <img alt="Salle de bain à l'étage" title="Salle de bain à l'étage" class="block object-cover object-center w-full h-full rounded-lg"
+                  src="assets/forlane/Forlane-023.jpg">
+              </div>
+            </div>
+            <div class="flex flex-wrap w-1/3">
+              <div class="w-full p-1 md:p-2">
+                <img alt="Espace jardin" title="Espace jardin" class="block object-cover object-center w-full h-full rounded-lg"
+                  src="assets/forlane/Forlane-005.jpg">
+              </div>
+            </div>
+            <div class="flex flex-wrap w-1/3">
+              <div class="w-full p-1 md:p-2">
+                <img alt="Salle d'eau rez-de-chaussée" title="Salle d'eau rez-de-chaussée" class="block object-cover object-center w-full h-full rounded-lg"
+                  src="assets/forlane/Forlane-021.jpg">
+              </div>
+            </div>
+            <!-- 3eme ligne de photos -->
+            <div class="flex flex-wrap w-1/3">
+                <div class="w-full p-1 md:p-2">
+                  <img alt="Cheminée feu de bois" title="Cheminée feu de bois" class="block object-cover object-center w-full h-full rounded-lg"
+                    src="assets/forlane/Forlane-008.jpg">
+                </div>
+              </div>
+              <div class="flex flex-wrap w-1/3">
+                <div class="w-full p-1 md:p-2">
+                  <img alt="Salon" title="Salon" class="block object-cover object-center w-full h-full rounded-lg"
+                    src="assets/forlane/Forlane-006.jpg">
+                </div>
+              </div>
+              <div class="flex flex-wrap w-1/3">
+                <div class="w-full p-1 md:p-2">
+                  <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-lg"
+                    src="assets/forlane/Forlane-016.jpg">
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <!-- bouton acces vers la gallery -->
+      <br>
+        <section class="text-center mb-10">
+            <div>
+                <button type="button" class="inline-block px-6 py-2 border-2 border-red-800 text-red-800 font-bold text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                    <a href="#" title="Visiter le rez-de-chaussee">VISITER LE REZ-DE-CHAUSSEE DE LA FORLANE</a>
+                  </button>
+            </div>
+        </section>
+
+    <!-- fin container page -->
+  </section>
+
+
+
+    <!-- Scroll to top button -->
+    
+    <div id="back2Top" class="bg-gray-300 text-center float-right cursor-pointer p-2 fixed right-5 bottom-5 fas fa-arrow-up">
+    </div>
+    
+    <script>
+    {
+        const back2Top = document.querySelector('#back2Top');
+        back2Top.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scroll({ top:0, left:0, behavior: 'smooth'});
+        });
+    }
+    </script>
+    <!-- Fin Scroll to Top button-->
+
+</body>
+</html>
