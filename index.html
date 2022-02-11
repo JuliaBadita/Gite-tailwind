@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en-US-fr" >
+<head>
+  <meta charset="UTF-8">
+  <title>La Forlane Gîte normand à Lorleau</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="og:title" content="Autour du gîte La Forlane" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+
+  <!--Links for Tailwind CSS-->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/flowbite@1.3.3/dist/flowbite.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+
+
+   <meta name="theme-color" content="#fafafa">
+   
+</head>
+
+<body class="font-sans">
+
+  <!-- Header -->
+   
+    <header class="items-center relative bg-[#8f4843] hidden lg:flex space-x-1 z-0">
+      <img class="object-cover w-full h-60 opacity-40 z-0" src="./assets/img/Navbar/gite-header.jpg">
+  
+
+    <article class="absolute top-20 left-16 text-white font-semibold">
+      <p>
+        <span class="">7 rue Bernard Buffet</span><br>
+        <span class="">Hameau St Crépin</span><br>
+        <span class="">27480 Lorleau</span></p>
+    </article> 
+
+    <article class="absolute top-20 inset-x-1/2">
+
+      <!-- Img Logo ici -->
+      <img src="./assets/img/Navbar/Forlane-logo-03.svg" class="absolute z-50">
+    </article>
+   
+    <article class="absolute text-right top-20 right-16 text-white font-semibold">
+      <p><span class="underline font-bold text-[#F5F572]"> Contact</span><br>
+        <a href="tel:+33603499244">06 03 49 92 44</a><br>
+        <a href="mailto:gite.laforlane@gmail.com">gite.laforlane@gmail.com</a></p>
+    </article>  
+
+  </header> 
+
+  <!-- Navbar -->
+
+  <nav class="bg-[#8f4843] shadow-lg mb-10">
+    <section class="max-w-6xl mx-auto px-4">
+      <div class="flex lg:justify-center">
+        <div class="flex space-x-7">
+
+          <!-- Primary Navbar items -->
+          <article class="hidden lg:flex items-center space-x-1">
+            <a href="index.html" class="p-7 px-3 text-black bg-[#cfc85f]  font-semibold ">Accueil</a>
+            <a href="" class=" py-7 px-3 text-white font-semibold hover:bg-black  transition duration-300">Equipements</a>
+            <a href="" class="p-7 px-3 text-white font-semibold hover:bg-black  transition duration-300">Galerie Photos</a>
+            <a href="history.html" class="p-7 px-3 text-white font-semibold hover:bg-black transition duration-300">Histoire du gîte</a>
+            <a href="around.html" class="p-7 px-3 text-white font-semibold hover:bg-black transition duration-300">Autour du gîte</a>
+            <a href="" class="p-7 px-3 text-white font-semibold hover:bg-black transition duration-300">Réservation</a>
+            <a href="" class="p-7 px-3 text-white font-semibold hover:bg-black transition duration-300">Contact</a>
+          </article>
+        </div>
+
+
+       <!-- Mobile menu button -->
+       <article class="lg:hidden flex items-center">
+        <button class="outline-none mobile-menu-button">
+        <svg class=" w-6 h-6 text-white hover:text-[#cfc85f]"
+          x-show="!showMenu"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewbox="0 0 24 24"
+          stroke="currentColor">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+      </article>
+      <div class="lg:m-0 mx-auto">
+   
+      <!-- Website Logo -->
+            <a href="index.html" class="flex px-2">
+              <img src="./assets/img/Navbar/Forlane-logo-03.svg" alt="Logo" class="h-20 w-24 mr-2 lg:hidden">
+            </a>
+        
+            </div>
+      </div>
+
+    </section>
+
+    <!-- mobile menu -->
+    <article class="hidden mobile-menu">
+      <ul>
+        <li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-black bg-[#cfc85f] font-semibold"> Accueil du Gîte La Forlane</a></li>
+        <li><a href="#services" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300">Equipements</a></li>
+        <li><a href="#about" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300">Galerie Photos</a></li>
+        <li><a href="history.html" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300">Histoire du Gîte</a></li>
+        <li><a href="around.html" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300">Autour du Gîte</a></li>
+        <li><a href="#contact" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300">Réservation</a></li>
+        <li><a href="#contact" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300">Contact</a></li>
+      </ul>
+    </article>
+    
+  </nav>
+
+
+  <!-- fin NAVBAR --> 
+
+  <!--Fil d'Ariane-->
+
+  <article class="flex my-3 mx-7" aria-label="Breadcrumb">
+    <ol class="inline-flex items-center space-x-1 md:space-x-3">
+    <li class="inline-flex items-center">
+    <a href="index.html" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+    <svg class="mr-2 w-4 h-4" fill="currentColor" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+    Accueil Gîte La Forlane
+    </a>
+    </li>
+    </ol>
+    </article>
+
+  <main>
+
+      <!--Home Carousel-->
+
+      <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+
+        <!-- Buttons slider carousel -->
+        <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="5"
+            aria-label="Slide 6"
+          ></button>
+        </div>
+
+        <!-- Item 1 Carousel -->
+        <div class="carousel-inner relative w-full overflow-hidden">
+          <div class="carousel-item active relative float-left md:w-full md:h-screen w-full h-full object-cover">
+        <figure>
+            <img
+              src="./assets/img/home/jardin.jpg"
+              class="block w-full"
+              alt="..."
+            />
+        </figure>    
+            <div class="carousel-caption hidden md:block absolute text-center">
+              <h5 class="text-xl">Le charme de la Normandie avec convivialité et classe</h5>
+              <p></p>
+            </div>
+          </div>
+
+          <!-- Item 2 Carousel -->
+          <div class="carousel-item relative float-left md:w-full md:h-screen w-full h-full object-cover">
+        <figure>  
+            <img
+              src="./assets/img/home/salle-a-manger.jpg"
+              class="block w-full"
+              alt="..."
+            />
+        </figure>    
+            <div class="carousel-caption hidden md:block absolute text-center">
+              <h5 class="text-xl">Second slide label</h5>
+              <p>Le charme de la Normandie avec convivialité et classe</p>
+            </div>
+          </div>
+
+          <!-- Item 3 Carousel -->
+          <div class="carousel-item relative float-left md:w-full md:h-screen w-full h-full object-cover">
+          <figure>
+            <img
+              src="./assets/img/home/salon.jpg"
+              class="block w-full"
+              alt="..."
+            />
+          </figure>  
+            <div class="carousel-caption hidden md:block absolute text-center">
+              <h5 class="text-xl">Third slide label</h5>
+              <p>Le charme de la Normandie avec convivialité et classe</p>
+            </div>
+          </div>
+
+          <!-- Item 4 Carousel -->
+          <div class="carousel-item relative float-left md:w-full md:h-screen w-full h-full object-cover">
+        <figure>
+            <img
+              src="./assets/img/home/gite-nuit.jpg"
+              class="block w-full"
+              alt="..."
+            />
+        </figure>    
+            <div class="carousel-caption hidden md:block absolute text-center">
+              <h5 class="text-xl">Fourth slide label</h5>
+              <p>Le charme de la Normandie avec convivialité et classe</p>
+            </div>
+          </div>
+
+          <!-- Item 5 Carousel -->
+          <div class="carousel-item relative float-left md:w-full md:h-screen w-full h-full object-cover">
+        <figure>
+            <img
+              src="./assets/img/home/gite-nuit.jpg"
+              class="block w-full"
+              alt="..."
+            />
+        </figure>    
+            <div class="carousel-caption hidden md:block absolute text-center">
+              <h5 class="text-xl">Fourth slide label</h5>
+              <p>Le charme de la Normandie avec convivialité et classe</p>
+            </div>
+          </div>
+
+          <!-- Item 6 Carousel -->
+          <div class="carousel-item relative float-left md:w-full md:h-screen w-full h-full object-cover">
+        <figure>
+            <img
+              src="./assets/img/home/gite-img.jpg"
+              class="block w-full"
+              alt="..."
+            />
+        </figure>    
+            <div class="carousel-caption hidden md:block absolute text-center">
+              <h5 class="text-xl">Fourth slide label</h5>
+              <p>Le charme de la Normandie avec convivialité et classe</p>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Buttons slider carousel -->
+        <button
+          class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+  <!-- Carousel button -->
+
+  <article class="text-center mb-10 ">
+    <button type="button" class="inline-block px-6 py-2 my-6 border-2 border-red-600 text-red-600 font-bold text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+        <a href="#" title="Décuvrez La Forlane">Découvrez La Forlane</a>
+      </button>
+</article>
+  
+      <!-- fin carrousel -->
+      
+
+     <!-- presentation -->
+
+      <section class="md:mx-20 mx-8 my-5">
+        <!-- <article class="col-md-12 col-lg-7 broken-grid_item broken-grid_underlay">
+          // img retirée //
+        </article> -->
+        <article class="">
+          <h2 class="text-center font-bold text-2xl mb-1">Douceur et confort</h2>
+          <p class="my-4">
+            Un hameau au coeur de la forêt de Lyons, la vraie campagne normande avec ses herbages, ses vergers de pommiers et ses vaches, et cette longère pleine de charme. 
+            Passez le portail et posez les valises ! Vous arrivez dans le très joli jardin que Maria et Jean-Luc peaufinent au fil des années avec de beaux espaces paysagers, tout en pensant à vos vacances.<br>
+            <br>A l'intérieur, vous serez séduits par l'esprit maison de famille : la déco est vraiment réussie (brocante, objets détournés et meubles d'antiquaires) et créé une ambiance très chaleureuse dans des tons chauds. Grand confort et équipement sont au rendez-vous, tout comme l'espace, également généreux. Idéal pour un séjour en famille ou entre amis.
+          </p>
+          <p class="my-4">
+            Entrée <span class="font-semibold underline">au rez-de-chaussée</span> sur la grande pièce de vie avec d'un côté le beau salon avec cheminée et bibliothèque et de l'autre, la cuisine salle-à-manger lumineuse et chaleureuse. Egalement une chambre (1 lit 2 pers), une salle d'eau et un wc indépendant.<br>
+            <br><span class="font-semibold underline">A l'étage</span>, desservi par 2 escaliers, 3 chambres mansardées (4 lits simples en grande longueur, 2 lits doubles en 160x200), salle de bains avec wc. Jeux extérieurs : ping-pong, badminton et portique, et pour l'intérieur, jeux de société et bibliothèque.<br>
+            <br>Profitez du superbe <span class="font-semibold underline">jardin</span> clos de 1700 m² arboré : quiétude et bains de soleil. Parfait pour le repos avec des chaises longues, ou pour de bons moments de détente et espace loisirs avec les jeux ou tout simplement l'espace ! Belles balades alentour en perspective ou découverte des trésors touristiques et gastronomiques de la région.
+          </p>
+        </article>
+        <article class="text-center mb-10">
+          <button type="button" class="inline-block px-6 py-2 border-2 border-red-600 text-red-600 font-bold text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+              <a href="#" title="Voir les équipements">Voir les équipements</a>
+            </button>
+       </article>
+      </section>
+
+  <!-- fin presentation -->
+
+  <!-- gallery -->
+  <section class="lg:content-auto">
+    
+      <!-- titre -->
+      <section class="mx-24">
+      <h2 class="text-center font-bold text-2xl mb-1">Visite des pièces du gîte</h2>
+      
+    <!-- gallery photos -->
+    <section class="overflow-hidden text-gray-700 ">
+        <div class="container px-5 py-2 mx-auto lg:pt-6 lg:px-32">
+          <!-- 1ere ligne de photos -->
+          <div class="flex flex-wrap -m-1 md:-m-2">
+            <article class="flex flex-wrap w-1/3">
+              <div class="w-full p-1 md:p-2">
+                <figure>
+                <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full"
+                  src="./assets/img/forlane/Forlane-015.jpg">
+                </figure>
+              </div>
+            </article>
+            <article class="flex flex-wrap w-1/3">
+              <div class="w-full p-1 md:p-2">
+                <figure>
+                <img alt="Salle à manger" title="Salle à manger" class="block object-cover object-center w-full h-full"
+                  src="./assets/img/forlane/Forlane-026.jpg">
+                </figure>
+              </div>
+            </article>
+            <article class="flex flex-wrap w-1/3">
+              <div class="w-full p-1 md:p-2">
+                <figure>
+                <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full"
+                  src="./assets/img/forlane/Forlane-019.jpg">
+                </figure>
+              </div>
+            </article>
+            <!-- 2eme ligne de photos -->
+            <article class="flex flex-wrap w-1/3">
+              <div class="w-full p-1 md:p-2">
+                <figure>
+                <img alt="Salle de bain à l'étage" title="Salle de bain à l'étage" class="block object-cover object-center w-full h-full"
+                  src="./assets/img/forlane/Forlane-023.jpg">
+                </figure>
+              </div>
+            </article>
+            <article class="flex flex-wrap w-1/3">
+              <div class="w-full p-1 md:p-2">
+                <figure>
+                <img alt="Espace jardin" title="Espace jardin" class="block object-cover object-center w-full h-full"
+                  src="./assets/img/forlane/Forlane-005.jpg">
+                </figure>  
+              </div>
+            </article>
+            <article class="flex flex-wrap w-1/3">
+              <div class="w-full p-1 md:p-2">
+                <figure>
+                <img alt="Salle d'eau rez-de-chaussée" title="Salle d'eau rez-de-chaussée" class="block object-cover object-center w-full h-full"
+                  src="./assets/img/forlane/Forlane-021.jpg">
+                </figure> 
+              </div>
+            </article>
+            <!-- 3eme ligne de photos -->
+            <article class="flex flex-wrap w-1/3">
+                <div class="w-full p-1 md:p-2">
+                  <figure>
+                  <img alt="Cheminée feu de bois" title="Cheminée feu de bois" class="block object-cover object-center w-full h-full"
+                    src="./assets/img/forlane/Forlane-008.jpg">
+                  </figure>  
+                </div>
+            </article>
+              <article class="flex flex-wrap w-1/3">
+                <div class="w-full p-1 md:p-2">
+                <figure>
+                  <img alt="Salon" title="Salon" class="block object-cover object-center w-full h-full"
+                    src="./assets/img/forlane/Forlane-006.jpg">
+                </figure>    
+                </div>
+              </article>
+              <article class="flex flex-wrap w-1/3">
+                <div class="w-full p-1 md:p-2">
+                  <figure>
+                  <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full"
+                    src="./assets/img/forlane/Forlane-016.jpg">
+                   </figure> 
+                </div>
+              </article>
+          </div>
+        </div>
+      </section>
+      <!-- bouton acces vers la gallery -->
+      <br>
+        <article class="text-center mb-10">
+                <button type="button" class="inline-block text-[0.65rem] px-6 py-2 border-2 border-red-600 text-red-600 font-bold md:text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                    <a href="#" title="Visiter le rez-de-chaussee">Visiter le rez-de-chaussée de La Forlane</a>
+                  </button>
+        </article>
+
+    <!-- fin container page -->
+  </section>  
+  </section>
+  
+  <!-- fin gallery -->
+
+  <!-- capacity : details du gite / css dans home-articles -->
+  <section>
+    <ul class="capacity">
+      <li class="people">
+        <strong class="capacity-title">Capacité</strong>
+        <span class="capacity-value">10</span>
+        <span class="capacity-type">personnes</span>
+      </li>
+      <li class="capacity-room">
+        <strong class="capacity-title">Chambres</strong>
+        <span class="capacity-value">4</span>
+        <span class="capacity-type">chambres</span>
+      </li>
+      <li class="capacity-surface">
+        <strong class="capacity-title">Surface</strong>
+        <span class="capacity-value">140</span>
+        <span class="capacity-type">m2</span>
+      </li>
+      <li class="capacity-wifi">
+        <strong class="capacity-title">Wifi</strong>
+        <span title="Wifi">
+          <img class="capacity-picto" src="./assets/img/home/wifi.PNG" alt="" title="">
+        </span>
+      </li>
+      <li class="no-pets">
+        <strong class="capacity-title">Animaux</strong>
+        <span title="Animaux non acceptés">
+          <!--
+          <svg class="no-pets">
+            <use xlink:href="#symbol-no-pets"></use>
+          </svg>-->
+          <img class="capacity-picto" src="./assets/img/home/no-pets.PNG" alt="Animaux : non" title="Pas d'animaux">
+        </span>
+      </li>
+    </ul>
+</section>
+  <!-- fin articles -->
+
+  
+  <!-- map -->
+
+
+    <article> 
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2594.8124878940007!2d1.5165565206315477!3d49.43135896346857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e72951f919d7af%3A0x2e8f63840be0ba18!2sLa%20Forlane!5e0!3m2!1sfr!2sfr!4v1642605530865!5m2!1sfr!2sfr" class="w-full md:h-80 h-72 px-6 md:px-20 my-6"></iframe>
+      <p class="md:mx-20 mx-6 mb-8 text-sm"><span class="font-semibold underline">
+        De Paris</span>, deux itinéraires sont possibles : <br>
+        - A13 direction <span class="text-[#8f4843]">Rouen</span> - Tunnel de <span class="text-[#8f4843]">Saint Cloud</span> - Péage à <span class="text-[#8f4843]">Mantes</span> - Sortie 17 <span class="text-[#8f4843]">Gaillon, Les Andelys, Lyons la Forêt</span>. A <span class="text-[#8f4843]">Lyons</span> prendre direction <span class="text-[#8f4843]">Forges les Eaux</span> et à la sortie de <span class="text-[#8f4843]">Lyons</span>, prendre à droite <span class="text-[#8f4843]">Lorleau</span> puis <span class="text-[#8f4843]">Saint Crépin</span> D132 (5 km).<br> - Sortir de <span class="text-[#8f4843]">Paris</span> par A86 puis A15 vers <span class="text-[#8f4843]">Pontoise</span> puis N14 <span class="text-[#8f4843]">Pontoise-Rouen</span>. A <span class="text-[#8f4843]">Ecouis</span>, prendre à droite vers <span class="text-[#8f4843]">Lyons la Forêt</span> puis <span class="text-[#8f4843]">Lorleau</span> et <span class="text-[#8f4843]">Saint Crépin</span>. <br> 
+          <br><span class="font-semibold underline">De Lille</span>, l'itinéraire le plus court : <br> - A1 jusque sortie <span class="text-[#8f4843]">Roye</span> puis <span class="text-[#8f4843]">Montdidier</span>, <span class="text-[#8f4843]">Breteuil</span>, <span class="text-[#8f4843]">Crévecoeur le Grand</span>, <span class="text-[#8f4843]">Marseille en Beauvaisie</span>, <span class="text-[#8f4843]">Gournay en Bray</span>. A <span class="text-[#8f4843]">Gournay</span> prendre la direction de <span class="text-[#8f4843]">Rouen</span> par la N31 et à <span class="text-[#8f4843]">La Feuillie</span> prendre la direction de <span class="home__map-paragraph-span">Fleurit le</span>.</p>
+      </article>
+
+  <!-- fin map -->
+
+  <!-- avis -->
+  <div class="lg:content-auto">
+    <!-- cards avis -->
+  <div class="flex flex-col items-center md:flex-row md:justify-center">
+      <!-- avis 1 -->
+      <section class="block rounded-lg shadow-lg bg-white max-w-sm text-center mx-3 my-6">
+        <!--<div class="py-3 px-6 border-b border-gray-300">
+          Featured
+        </div>-->
+        <article class="text-center">
+        <figure>
+          <img
+            src="./assets/img/home/hortensia.PNG"
+            class="rounded-full w-32 mb-4 mx-auto"
+            alt="Avatar"
+          />
+         </figure> 
+          <h5 class="text-lg font-medium leading-normal mb-2">John Doe</h5>
+          <p class="text-gray-500 text-sm">Paris, France</p>
+        </article>
+        <article class="p-6">
+          <h5 class="text-gray-900 text-lg font-medium mb-2">Nous reviendrons</h5>
+          <p class="text-gray-700 text-sm mb-4">
+            Un séjour très agréable.<br>Grand confort et maison décorée avec goût. Le charme des lieux a beaucoup été apprécié par tous : nous avons pu fêter les 50 ans de mariage de nos parents tout en réunissant la famille dans un cadre convivial et chaleureux.
+          </p>
+          <!--<button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>-->
+      </article>
+        <div class="py-0 px-6 border-gray-300 text-gray-600 text-sm">
+          15/08/2021
+        </div>
+      </section>
+      <!-- fin avis 1 -->
+      <!-- avis 2 -->
+      <section class="block rounded-lg shadow-lg bg-white max-w-sm text-center mx-3 my-6">
+          <!--<div class="py-3 px-6 border-b border-gray-300">
+            Featured
+          </div>-->
+          <article class="text-center">
+          <figure>
+            <img
+              src="./assets/img/home/pinky.PNG"
+              class="rounded-full w-32 mb-4 mx-auto"
+              alt="Avatar"
+            />
+            </figure>
+            <h5 class="text-lg font-medium leading-normal mb-2">Penelope Doe</h5>
+          <p class="text-gray-500 text-sm">Paris, France</p>
+        </article>
+        <article class="p-6">
+          <h5 class="text-gray-900 text-lg font-medium mb-2">Nous reviendrons</h5>
+          <p class="text-gray-700 text-sm mb-4">
+            Un séjour très agréable.<br>Grand confort et maison décorée avec goût. Le charme des lieux a beaucoup été apprécié par tous : nous avons pu fêter les 50 ans de mariage de nos parents tout en réunissant la famille dans un cadre convivial et chaleureux.
+          </p>
+          <!--<button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>-->
+      </article>
+        <div class="py-0 px-6 border-gray-300 text-gray-600 text-sm">
+          15/08/2021
+        </div>
+      </section>
+        <!-- fin avis 2 -->
+        <!-- avis 3 -->
+      <section class="block rounded-lg shadow-lg bg-white max-w-sm text-center mx-3 my-6">
+          <!--<div class="py-3 px-6 border-b border-gray-300">
+            Featured
+          </div>-->
+          <article class="text-center">
+          <figure>
+            <img
+              src="./assets/img/home/hortensia.PNG"
+              class="rounded-full w-32 mb-4 mx-auto"
+              alt="Avatar"
+            />
+          </figure>  
+            <h5 class="text-lg font-medium leading-normal mb-2">John Doe</h5>
+          <p class="text-gray-500 text-sm">Paris, France</p>
+        </article>
+        <article class="p-6">
+          <h5 class="text-gray-900 text-lg font-medium mb-2">Nous reviendrons</h5>
+          <p class="text-gray-700 text-sm mb-4">
+            Un séjour très agréable.<br>Grand confort et maison décorée avec goût. Le charme des lieux a beaucoup été apprécié par tous : nous avons pu fêter les 50 ans de mariage de nos parents tout en réunissant la famille dans un cadre convivial et chaleureux.
+          </p>
+          <!--<button type="button" class=" inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Button</button>-->
+      </article>
+        <div class="py-0 px-6 border-gray-300 text-gray-600 text-sm">
+          15/08/2021
+        </div>
+      </section>
+        <!-- fin avis 3 -->
+    </div>
+</div>
+  <!-- fin avis -->
+</main>
+
+<!-- FOOTER -->
+<footer class="p-4 bg-[#8f4843] sm:p-6 dark:bg-gray-800 mt-12">
+  <section class="md:flex md:justify-between">
+      <!-- logo ou nom -->
+      <article class="mb-6 mx-4 md:mb-0">
+          <a href="index.html" target="_blank" class="flex items-center">
+        <figure>
+          <img src="./assets/img/footer/Forlane-logo-03.svg" class="mr-5 h-16" alt="La Forlane">
+        </figure></a>
+          <p class="mt-4 text-sm text-white font-medium whitespace-nowrap dark:text-white">
+              Gîte de charme à Lorleau dans l'Eure, <br>dans la campagne de Normandie proche <br>de Lyons-la-Forêt.<br>
+                  Réservez votre location de vacances dans <br>un cadre chaleureux, agréable et stylé <br>et prenez le temps de faire du tourisme ! <br>Lieu de convivialité idéal pour se réunir <br>entre particuliers ou pour organiser <br>des réunions de familles.
+                  
+          </p>
+      </article>
+      <!-- conteneur du texte -->
+      <section class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+          <!-- colonne autour -->
+          <article>
+              <h3 class="mb-6 text-base font-extrabold tracking-wider text-white uppercase dark:text-white">
+                  Autour du gîte</h3>
+              <ul>
+                  <li class="mb-2 text-base">
+                      <a href="https://www.lyons-andelle-tourisme.com/sejourner/toutes-nos-brochures-en-ligne/" alt="Lyons-la-Forêt" target="_blank" class="text-white hover:underline dark:text-gray-400">
+                          Lyons-la-Forêt, tourisme
+                      </a>
+                  </li>
+                  <li  class="mb-2 text-base">
+                      <a href="" target="_blank" rel="nofollow" class="text-white hover:underline dark:text-gray-400">
+                          Normandie Tourisme
+                      </a>
+                  </li>
+                  <li  class="mb-2 text-base">
+                      <a href="https://www.junobeach.org/fr/" target="_blank" rel="nofollow" class="text-white hover:underline dark:text-gray-400">
+                          Centre Juno Beach, memorial
+                      </a>
+                  </li>
+                  <li  class="mb-2 text-base">
+                      <a href="" target="_blank" rel="nofollow" class="text-white hover:underline dark:text-gray-400">
+                          Activités culturelles
+                      </a>
+                  </li>
+                  <li  class="mb-2 text-base">
+                      <a href="" target="_blank" rel="nofollow" class="text-white hover:underline dark:text-gray-400">
+                          Gastronomie
+                      </a>
+                  </li>
+              </ul>
+          </article>
+          <!-- colonne reference -->
+          <article>
+              <h3 class="mb-6 text-base font-extrabold tracking-wider text-white uppercase dark:text-white">
+              Nos références</h3>
+              <ul>
+              <li class="mb-2">
+              <a href="https://www.france-voyage.com/locations-vacances/location-lorleau-28693.htm" target="_blank" class="text-white hover:underline dark:text-white">
+                  France Voyage</a>
+              </li>
+              <li>
+              <a href="https://www.gites-de-france-eure.com/location-vacances-Gite-Lorleau-27G750.html" target="_blank" class="text-white hover:underline dark:text-white">
+                  Gîtes de France</a>
+                  <img class="h-12 mt-1" src="./assets/img/footer/GiteDeFrance_4Epis.png"/>
+              </li>
+              </ul>
+          </article>
+          <!-- contact -->
+          <article>
+              <h3 class="mb-6 text-base font-extrabold tracking-wider text-white uppercase dark:text-white">Contact</h3>
+              <ul>
+                  <li class="mb-4">
+                  <p class="text-white hover:underline dark:text-white">
+                    La Forlane : Jean-Luc et Maria</p>
+                  </li>
+                  <li>
+                    <a href="mailto:gite.laforlane@gmail.com" target="_blank" class="text-white hover:underline dark:text-white">gite.laforlane@gmail.com</a><br>
+                  </li>
+              </ul>
+          </article>
+      </section>
+  <!-- fin conteneur flex -->
+  </section>
+
+  <!-- partie photos -->
+  <section class="container p-4 mt-4 md:justify-center">
+      <!-- zone photos -->
+      <article class="grid lg:grid-cols-6 md:grid-cols-3 gap-4 sm:h-1/4">
+        <!-- img 1 -->
+        <section class="lg:mb-0 mb-2">
+          <img
+            src="./assets/img/forlane/Forlane-006.jpg"
+            class="md:w-full md:h-full rounded-none w-96 h-60 object-cover justify-self-center"
+          />
+        </section>
+        <!-- img 2 -->
+        <section class="lg:mb-0 mb-2">
+          <img
+            src="./assets/img/forlane/Forlane-004.jpg"
+            class="w-full rounded-none"
+          />
+        </section>
+        <!-- img 3 -->
+        <section class="lg:mb-0 mb-2">
+          <img
+            src="./assets/img/forlane/Forlane-015.jpg"
+            class="w-full rounded-none"
+          />
+        </section>
+        <!-- img 4 -->
+        <section class="lg:mb-0 mb-2">
+          <img
+            src="./assets/img/forlane/Forlane-008.jpg"
+            class="w-full rounded-none"
+          />
+        </section>
+        <!-- img 5 -->
+        <section class="lg:mb-0 mb-2">
+          <img
+            src="./assets/img/forlane/Forlane-016.jpg"
+            class="w-full rounded-none"
+          />
+        </section>
+        <!-- img 6 -->
+        <section class="lg:mb-0 mb-2">
+          <img
+            src="./assets/img/forlane/Forlane-022.jpg"
+            class="w-full rounded-none"
+          />
+        </section>
+      </article>
+  </section>
+
+  <!-- fin partie photos -->
+
+  <!-- reseaux sociaux -->
+  <hr class="my-4 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-4">
+  <!-- credits -->
+  <section class="sm:flex sm:items-center sm:justify-between">
+      <span class="text-xs text-white sm:text-center dark:text-gray-200">© 2022
+          . All Rights Reserved. / La Forlane, JL Lecomte.
+      </span>
+      <!-- pictos reseaux -->
+      <article class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+          <!-- facebook -->
+          <a href="https://www.facebook.com/La-Forlane-504084072966711/?ref=page_internal" class="text-white hover:text-gray-200 dark:hover:text-white">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg>
+          </a>
+          <!-- instagram -->
+          <a href="#" class="text-white hover:text-gray-200 dark:hover:text-white">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path></svg>
+          </a>
+      </article>
+  </section>
+
+</footer>
+<!-- fin FOOTER --> 
+
+
+<!-- Scroll to top button -->
+
+<div id="back2Top" class="bg-gray-300 text-center float-right cursor-pointer p-2 fixed right-7 bottom-10 fas fa-arrow-up">
+</div>
+
+<script>
+{
+    const back2Top = document.querySelector('#back2Top');
+    back2Top.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scroll({ top:0, left:0, behavior: 'smooth'});
+    });
+}
+</script>
+<!-- Fin Scroll to Top button-->
+
+ <!-- For The Navbar -->
+
+ <script>
+  const btn = document.querySelector("button.mobile-menu-button");
+  const menu = document.querySelector(".mobile-menu");
+
+  btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+</script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+  window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+
+
+  <!--For Tailwind Elements-->
+
+  <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+  </body>
+  
+  </html>
