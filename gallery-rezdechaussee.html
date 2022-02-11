@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.3/dist/flowbite.min.css" />
+
+
+    <style type="text/tailwindcss">
+        @layer utilities { .content-auto { content-visibility: auto; } }
+    </style>
+    <script src="https://unpkg.com/flowbite@1.3.3/dist/flowbite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</head>
+
+<body>
+
+    <section class="lg:content-auto">
+        <!-- on commence a coder ici -->
+
+        <!-- fil d'ariane -->
+        <article class="flex mt-2 mx-7" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                <li class="inline-flex items-center">
+                    <a href="#" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                        <svg class="mr-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>                        Accueil La Forlane
+                    </a>
+                </li>
+                <!--
+          <li>
+            <div class="flex items-center">
+              <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+              <a href="#" class="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">Projects</a>
+            </div>
+          </li>-->
+                <li aria-current="page">
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                        <span class="ml-1 text-sm font-medium text-gray-400 md:ml-2 dark:text-gray-500">Gallery : rez-de-chaussée de La Forlane</span>
+                    </div>
+                </li>
+            </ol>
+        </article>
+
+        <br>
+
+        <!-- titre -->
+        <section class="mx-24">
+            <h2 class="text-center font-bold text-2xl mb-1">Visite des pièces du Rez-de-chaussée</h2>
+
+            <!-- gallery photos -->
+            <section class="overflow-hidden text-gray-700 mt-2">
+                <article class="container px-5 py-2 mx-auto lg:pt-6 lg:px-32">
+                    <!-- 1ere ligne de photos -->
+                    <section class="flex flex-wrap -m-1 md:-m-2">
+                        <div class="flex flex-wrap w-1/3">
+                            <div class="w-full p-1 md:p-2">
+                                <img alt="Entrée et vue sur la cuisine" title="Entrée et vue sur la cuisine" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-007.jpg">
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap w-1/3">
+                            <div class="w-full p-1 md:p-2">
+                                <img alt="Cuisine et Salle à manger" title="Cuisine et salle à manger" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-004.jpg">
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap w-1/3">
+                            <div class="w-full p-1 md:p-2">
+                                <img alt="Cuisine et salle à manger" title="Cuisine et salle à manger" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-026.jpg">
+                            </div>
+                        </div>
+                        <!-- 2eme ligne de photos -->
+                        <div class="flex flex-wrap w-1/3">
+                            <div class="w-full p-1 md:p-2">
+                                <img alt="Salle d'eau : doubles vasques" title="Salle d'eau : doubles vasques" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-022.jpg">
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap w-1/3">
+                            <div class="w-full p-1 md:p-2">
+                                <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-011.jpg">
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap w-1/3">
+                            <div class="w-full p-1 md:p-2">
+                                <img alt="Salle d'eau : douche" title="Salle d'eau : douche" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-021.jpg">
+                            </div>
+                        </div>
+                        <!-- 3eme ligne de photos -->
+                        <div class="flex flex-wrap w-1/3">
+                            <div class="w-full p-1 md:p-2">
+                                <img alt="Cheminée feu de bois" title="Cheminée feu de bois" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-009.jpg">
+                            </div>
+                        </div>
+                        <article class="flex flex-wrap w-1/3">
+                            <div class="w-full p-1 md:p-2">
+                                <img alt="Salon avec canapés et fauteuils" title="Salon avec canapés et fauteuils" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-006.jpg">
+                            </div>
+                        </article>
+                        <article class="flex flex-wrap w-1/3">
+                            <div class="w-full p-1 md:p-2">
+                                <img alt="Salon avec cheminée" title="Salon avec cheminée" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-008.jpg">
+                            </div>
+                        </article>
+                    </section>
+                </article>
+            </section>
+
+            <!-- fin gallery -->
+
+            <!-- ligne separation -->
+            <article class="w-full bg-gray-200 h-0.5 mt-0 mb-4">
+                <div class="bg-gray-400 h-0.5" style="width: 50%"></div>
+            </article>
+
+            <!-- texte -->
+            <section class="mx-2">
+                <h5 class="text-large font-bold text-red-700">
+                    REZ-DE-CHAUSSEE
+                </h5>
+                <p>
+                    Accès à l'étage par un escalier en bois dans le salon.<br> Portes extérieures : salon et cuisine (double porte).
+                </p>
+                <h5 class="font-bold mt-3">
+                    Cuisine et salle à manger - 25m²
+                </h5>
+                <p>
+                    Cuisine équipée avec un grand frigo type américain, micro-ondes, four, plaques de cuisson, placards de rangement. Et une très grande table en bois pour accueillir de nombreux convives à déjeuner.
+                </p>
+                <h5 class="font-bold mt-3">
+                    Salon - 26m²
+                </h5>
+                <p>
+                    Larges canapés confortables, fauteuils et cheminée au feu de bois.<br> Feu de bois pouvant être allumé et stères de bois disponibles (à voir dans le forfait).<br> Ambiance cosy et chaleureuse pour se reposer au calme le soir.
+                </p>
+                <h5 class="font-bold mt-3">
+                    Salle d'eau avec douche et doubles vasques - 6m²
+                </h5>
+                <p>
+                    Salle d'eau lumineuse et pratique : douche simple sans porte. WC séparé.<br> Espace de rangement, machine à laver.
+                </p>
+                <h5 class="font-bold mt-3">
+                    Chambre lit 2 personnes - 15m²
+                </h5>
+                <p>
+                    Lumineuse et calme. Elle dispose d'une salle d'eau privative attenante à la chambre.<br> Un grand lit 2 personnes et fauteuils.
+                </p>
+            </section>
+
+            <!-- ligne separation -->
+            <article class="w-full bg-gray-200 h-0.5 mt-5 mb-2">
+                <div class="bg-gray-400 h-0.5" style="width: 50%"></div>
+            </article>
+
+
+            <!-- bouton acces vers la gallery -->
+
+            <br>
+            <section class="text-center mb-10">
+                <article>
+                    <button type="button" class="inline-block px-6 py-2 border-2 border-red-600 text-red-600 font-bold text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                    <a href="#" title="Visiter l'étage de La Forlane'">VISITER L'ETAGE DE LA FORLANE</a>
+                  </button>
+                </article>
+            </section>
+
+            <!-- fin container page -->
+        </section>
+
+
+
+        <!-- Scroll to top button -->
+
+        <div id="back2Top" class="bg-gray-300 text-center float-right cursor-pointer p-2 fixed right-5 bottom-5 fas fa-arrow-up">
+        </div>
+
+        <script>
+            {
+                const back2Top = document.querySelector('#back2Top');
+                back2Top.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    window.scroll({
+                        top: 0,
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+        </script>
+        <!-- Fin Scroll to Top button-->
+
+</body>
+
+</html>
