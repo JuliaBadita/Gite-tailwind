@@ -1,0 +1,738 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.3.3/dist/flowbite.min.css" />
+
+
+    <style type="text/tailwindcss">
+        @layer utilities { .content-auto { content-visibility: auto; } }
+    </style>
+    <script src="https://unpkg.com/flowbite@1.3.3/dist/flowbite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</head>
+
+<body>
+
+    <section class="lg:content-auto">
+        <!-- on commence a coder ici -->
+
+        <!-- Header -->
+
+        <header class="items-center relative bg-[#8f4843] hidden lg:flex space-x-1 z-0">
+            <img class="object-cover w-full h-60 opacity-40 z-0" src="./assets/img/Navbar/gite-header.jpg">
+
+
+            <article class="absolute top-20 left-16 text-white font-semibold">
+                <p>
+                    <span class="">7 rue Bernard Buffet</span><br>
+                    <span class="">Hameau St Crépin</span><br>
+                    <span class="">27480 Lorleau</span></p>
+            </article>
+
+            <article class="absolute top-20 inset-x-1/2">
+
+                <!-- Img Logo ici -->
+                <img src="./assets/img/Navbar/Forlane-logo-03.svg" class="absolute z-50">
+            </article>
+
+            <article class="absolute text-right top-20 right-16 text-white font-semibold">
+                <p><span class="underline font-bold text-[#F5F572]"> Contact</span><br>
+                    <a href="tel:+33603499244">06 03 49 92 44</a><br>
+                    <a href="mailto:gite.laforlane@gmail.com">gite.laforlane@gmail.com</a></p>
+            </article>
+
+        </header>
+
+        <!-- Navbar -->
+
+        <nav class="bg-[#8f4843] shadow-lg mb-10">
+            <section class="max-w-6xl mx-auto px-4">
+                <div class="flex lg:justify-center">
+                    <div class="flex space-x-7">
+
+                        <!-- Primary Navbar items -->
+                        <article class="hidden lg:flex items-center space-x-1">
+                            <a href="index.html" class="p-7 px-3 text-black bg-[#cfc85f]  font-semibold ">Accueil</a>
+                            <a href="equipements.html" class=" py-7 px-3 text-white font-semibold hover:bg-black  transition duration-300">Equipements</a>
+                            <a href="gallery-visite.html" class="p-7 px-3 text-white font-semibold hover:bg-black  transition duration-300">Galerie Photos</a>
+                            <a href="history.html" class="p-7 px-3 text-white font-semibold hover:bg-black transition duration-300">Histoire du gîte</a>
+                            <a href="around.html" class="p-7 px-3 text-white font-semibold hover:bg-black transition duration-300">Autour du gîte</a>
+                            <a href="reservation.html" class="p-7 px-3 text-white font-semibold hover:bg-black transition duration-300">Réservation</a>
+                            <a href="contact.html" class="p-7 px-3 text-white font-semibold hover:bg-black transition duration-300">Contact</a>
+                        </article>
+                    </div>
+
+
+                    <!-- Mobile menu button -->
+                    <article class="lg:hidden flex items-center">
+                        <button class="outline-none mobile-menu-button">
+          <svg class=" w-6 h-6 text-white hover:text-[#cfc85f]"
+            x-show="!showMenu"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewbox="0 0 24 24"
+            stroke="currentColor">
+            <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+                    </article>
+                    <div class="lg:m-0 mx-auto">
+
+                        <!-- Website Logo -->
+                        <a href="index.html" class="flex px-2">
+                            <img src="./assets/img/Navbar/Forlane-logo-03.svg" alt="Logo" class="h-20 w-24 mr-2 lg:hidden">
+                        </a>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- mobile menu -->
+            <article class="hidden mobile-menu">
+                <ul>
+                    <li><a href="index.html" class="block text-sm px-2 py-4 text-black bg-[#cfc85f] font-semibold"> Accueil du Gîte La Forlane</a></li>
+                    <li><a href="#services" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300">Equipements</a></li>
+                    <li class="active"><a href="gallery-visite.html" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300">Galerie Photos</a></li>
+                    <li><a href="history.html" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300">Histoire du Gîte</a></li>
+                    <li><a href="around.html" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300">Autour du Gîte</a></li>
+                    <li><a href="#contact" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300">Réservation</a></li>
+                    <li><a href="#contact" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300">Contact</a></li>
+                </ul>
+            </article>
+
+        </nav>
+
+
+        <!-- fin NAVBAR -->
+
+        <!-- fil d'ariane -->
+        <article class="flex mt-1 mx-7" aria-label="Breadcrumb">
+            <ol class="inline-flex items-center space-x-1 md:space-x-3">
+                <li class="inline-flex items-center">
+                    <a href="#" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                        <svg class="mr-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>                        Accueil La Forlane
+                    </a>
+                </li>
+                <!--
+          <li>
+            <div class="flex items-center">
+              <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+              <a href="#" class="ml-1 text-sm font-medium text-gray-700 hover:text-gray-900 md:ml-2 dark:text-gray-400 dark:hover:text-white">Projects</a>
+            </div>
+          </li>-->
+                <li aria-current="page">
+                    <div class="flex items-center">
+                        <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                        <span class="ml-1 text-sm font-medium text-gray-400 md:ml-2 dark:text-gray-500">Gallery : visite de La Forlane</span>
+                    </div>
+                </li>
+            </ol>
+        </article>
+
+        <br>
+
+        <section class="mx-4">
+            <h2 class="text-center font-bold text-2xl mb-1">Visite de La Forlane en photos</h2>
+        </section>
+
+        <!-- ici debute les onglets -->
+        <section class="mx-4">
+            <ul class="nav nav-tabs flex flex-col md:flex-row flex-wrap list-none border-b-0 pl-0 mb-4" id="tabs-tabFill" role="tablist">
+                <!-- ligne nom onglet REZ DE CHAUSSEE -->
+                <li class="nav-item flex-auto text-center" role="presentation">
+                    <a href="#tabs-homeFill" class="
+      nav-link
+      w-full
+      block
+      font-semibold
+      text-sm
+      text-red-600
+      hover:text-red-600
+      active:text-red-600
+      leading-tight
+      uppercase
+      border-x-0 border-t-0 border-b-2 border-transparent
+      px-6
+      py-3
+      my-2
+      hover:border-transparent hover:bg-gray-200
+      focus:border-transparent
+      active
+    " id="tabs-home-tabFill" data-bs-toggle="pill" data-bs-target="#tabs-homeFill" role="tab" aria-controls="tabs-homeFill" aria-selected="true">
+    Rez-de-chaussée du gîte</a>
+                </li>
+                <!-- ligne nom onglet ETAGE -->
+                <li class="nav-item flex-auto text-center" role="presentation">
+                    <a href="#tabs-profileFill" class="
+      nav-link
+      w-full
+      block
+      font-medium
+      text-sm
+      text-red-600
+      hover:text-red-600
+      active:text-red-600
+      leading-tight
+      uppercase
+      border-x-0 border-t-0 border-b-2 border-transparent
+      px-6
+      py-3
+      my-2
+      hover:border-transparent hover:bg-gray-200
+      focus:border-transparent
+    " id="tabs-profile-tabFill" data-bs-toggle="pill" data-bs-target="#tabs-profileFill" role="tab" aria-controls="tabs-profileFill" aria-selected="false">
+    Etage du gîte</a>
+                </li>
+                <li class="nav-item flex-auto text-center" role="presentation">
+                    <a href="#tabs-messagesFill" class="
+      nav-link
+      w-full
+      block
+      font-medium
+      text-sm
+      text-red-600
+      hover:text-red-600
+      active:text-red-600
+      leading-tight
+      uppercase
+      border-x-0 border-t-0 border-b-2 border-transparent
+      px-6
+      py-3
+      my-2
+      hover:border-transparent hover:bg-gray-200
+      focus:border-transparent
+    " id="tabs-messages-tabFill" data-bs-toggle="pill" data-bs-target="#tabs-messagesFill" role="tab" aria-controls="tabs-messagesFill" aria-selected="false">
+    Extérieur du gîte</a>
+                </li>
+            </ul>
+
+            <!-- debut des onglets -->
+            <section class="tab-content" id="tabs-tabContentFill">
+
+                <!-- onglet rez de chaussee -->
+                <article class="tab-pane fade show active" id="tabs-homeFill" role="tabpanel" aria-labelledby="tabs-home-tabFill">
+
+                    <!-- titre 
+                    <section class="mx-4">
+                        <h2 class="text-center font-bold text-2xl mb-1">Visite des pièces du Rez-de-chaussée</h2>
+                    </section>-->
+
+                    <!-- gallery photos RDC -->
+                    <section class="overflow-hidden text-gray-700 mt-2">
+                        <article class="container px-5 py-2 mx-auto lg:pt-6 lg:px-32">
+                            <!-- 1ere ligne de photos -->
+                            <section class="flex flex-wrap -m-1 md:-m-2">
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Entrée et vue sur la cuisine" title="Entrée et vue sur la cuisine" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-007.jpg">
+                                    </div>
+                                </article>
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Cuisine et Salle à manger" title="Cuisine et salle à manger" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-004.jpg">
+                                    </div>
+                                </article>
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Cuisine et salle à manger" title="Cuisine et salle à manger" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-026.jpg">
+                                    </div>
+                                </article>
+                                <!-- 2eme ligne de photos -->
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Salle d'eau : doubles vasques" title="Salle d'eau : doubles vasques" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-022.jpg">
+                                    </div>
+                                </article>
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-011.jpg">
+                                    </div>
+                                </article>
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Salle d'eau : douche" title="Salle d'eau : douche" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-021.jpg">
+                                    </div>
+                                </article>
+                                <!-- 3eme ligne de photos -->
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Cheminée feu de bois" title="Cheminée feu de bois" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-009.jpg">
+                                    </div>
+                                </article>
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Salon avec canapés et fauteuils" title="Salon avec canapés et fauteuils" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-006.jpg">
+                                    </div>
+                                </article>
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Salon avec cheminée" title="Salon avec cheminée" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-008.jpg">
+                                    </div>
+                                </article>
+                            </section>
+                        </article>
+                    </section>
+
+                    <!-- fin gallery -->
+
+                    <!-- ligne separation -->
+                    <article class="w-full bg-gray-200 h-0.5 mt-0 mb-4">
+                        <div class="bg-gray-400 h-0.5" style="width: 50%"></div>
+                    </article>
+
+                    <!-- texte -->
+                    <section class="mx-2">
+                        <h5 class="text-large font-bold text-red-700">
+                            REZ-DE-CHAUSSEE
+                        </h5>
+                        <p>
+                            Accès à l'étage par un escalier en bois dans le salon.<br> Portes extérieures : salon et cuisine (double porte).
+                        </p>
+                        <h5 class="font-bold mt-3">
+                            Cuisine et salle à manger - 25m²
+                        </h5>
+                        <p>
+                            Cuisine équipée avec un grand frigo type américain, micro-ondes, four, plaques de cuisson, placards de rangement. Et une très grande table en bois pour accueillir de nombreux convives à déjeuner.
+                        </p>
+                        <h5 class="font-bold mt-3">
+                            Salon - 26m²
+                        </h5>
+                        <p>
+                            Larges canapés confortables, fauteuils et cheminée au feu de bois.<br> Feu de bois pouvant être allumé et stères de bois disponibles (à voir dans le forfait).<br> Ambiance cosy et chaleureuse pour se reposer au calme le soir.
+                        </p>
+                        <h5 class="font-bold mt-3">
+                            Salle d'eau avec douche et doubles vasques - 6m²
+                        </h5>
+                        <p>
+                            Salle d'eau lumineuse et pratique : douche simple sans porte. WC séparé.<br> Espace de rangement, machine à laver.
+                        </p>
+                        <h5 class="font-bold mt-3">
+                            Chambre lit 2 personnes - 15m²
+                        </h5>
+                        <p>
+                            Lumineuse et calme. Elle dispose d'une salle d'eau privative attenante à la chambre.<br> Un grand lit 2 personnes et fauteuils.
+                        </p>
+                    </section>
+
+                    <!-- ligne separation -->
+                    <article class="w-full bg-gray-200 h-0.5 mt-5 mb-2">
+                        <div class="bg-gray-400 h-0.5" style="width: 50%"></div>
+                    </article>
+                </article>
+
+
+
+
+                <!-- onglet ETAGE -->
+                <article class="tab-pane fade" id="tabs-profileFill" role="tabpanel" aria-labelledby="tabs-profile-tabFill">
+
+                    <!-- titre etage 
+                    <section class="mx-24">
+                        <h2 class="text-center font-bold text-2xl mb-1">Visite des pièces à l'étage</h2>
+                    </section>-->
+
+                    <!-- gallery photos ETAGE -->
+                    <section class="overflow-hidden text-gray-700 mt-2">
+                        <article class="container px-5 py-2 mx-auto lg:pt-6 lg:px-32">
+                            <!-- 1ere ligne de photos -->
+                            <section class="flex flex-wrap -m-1 md:-m-2">
+                                <article class="flex flex-wrap w-1/3">
+                                    <figure class="w-full p-1 md:p-2">
+                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-014.jpg">
+                                    </figure>
+                                </article>
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-015.jpg">
+                                    </div>
+                                </article>
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-016.jpg">
+                                    </div>
+                                </article>
+                                <!-- 2eme ligne de photos -->
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-017.jpg">
+                                    </div>
+                                </article>
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Salle de bain  baignoire" title="Salle de bain : baignoire" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-023.jpg">
+                                    </div>
+                                </article>
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-019.jpg">
+                                    </div>
+                                </article>
+                                <!-- 3eme ligne de photos -->
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-019.jpg">
+                                    </div>
+                                </article>
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-016.jpg">
+                                    </div>
+                                </article>
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-017.jpg">
+                                    </div>
+                                </article>
+                            </section>
+                        </article>
+                    </section>
+
+                    <!-- fin gallery -->
+
+                    <!-- ligne separation -->
+                    <article class="w-full bg-gray-200 h-0.5 mt-0 mb-4">
+                        <div class="bg-gray-400 h-0.5" style="width: 50%"></div>
+                    </article>
+                    <!-- texte -->
+                    <section class="mx-2">
+                        <h5 class="text-large font-bold text-red-700">
+                            ETAGE
+                        </h5>
+                        <p>
+                            Accès à l'étage par un escalier en bois depuis le salon.
+                        </p>
+                        <h5 class="font-bold mt-3">
+                            Chambre 1 - XXm²
+                        </h5>
+                        <p>
+                            Lit 2 personnes.
+                        </p>
+                        <h5 class="font-bold mt-3">
+                            Chambre 2 - XXm²
+                        </h5>
+                        <p>
+                            Chambre confortable.<br> Ambiance cosy et chaleureuse pour se reposer au calme le soir.
+                        </p>
+                        <h5 class="font-bold mt-3">
+                            Salle de bain - Xm²
+                        </h5>
+                        <p>
+                            Baignoire et lavabos.<br> Espace de rangement.
+                        </p>
+                        <h5 class="font-bold mt-3">
+                            Chambre 3 lit 2 personnes - XXm²
+                        </h5>
+                        <p>
+                            Lumineuse et calme. Un grand lit 2 personnes et fauteuils.
+                        </p>
+                    </section>
+
+                    <!-- ligne separation -->
+                    <article class="w-full bg-gray-200 h-0.5 mt-5 mb-2">
+                        <div class="bg-gray-400 h-0.5" style="width: 50%"></div>
+                    </article>
+                </article>
+
+
+
+
+                <!-- onglet EXTERIEUR -->
+                <article class="tab-pane fade" id="tabs-messagesFill" role="tabpanel" aria-labelledby="tabs-profile-tabFill">
+
+                    <!-- titre 
+                <section class="mx-24">
+                    <h2 class="text-center font-bold text-2xl mb-1">Visite des pièces de l'extérieur</h2>
+                </section>-->
+
+                    <!-- gallery photos ETAGE -->
+                    <section class="overflow-hidden text-gray-700 mt-2">
+                        <article class="container px-5 py-2 mx-auto lg:pt-6 lg:px-32">
+                            <!-- 1ere ligne de photos -->
+                            <section class="flex flex-wrap -m-1 md:-m-2">
+                                <article class="flex flex-wrap w-1/3">
+                                    <figure class="w-full p-1 md:p-2">
+                                        <img alt="Vue du jardin" title="Vue du jardin : balançoires" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-002.jpg">
+                                    </figure>
+                                </article>
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Coin détente : caillebottis et meubles de jardin" title="Coin détente : caillebottis et meubles de jardin" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-005.jpg">
+                                    </div>
+                                </article>
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Cuisine et salle à manger" title="Cuisine et salle à manger" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-027.jpg">
+                                    </div>
+                                </article>
+                                <!-- 2eme ligne de photos -->
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Salle d'eau : doubles vasques" title="Salle d'eau : doubles vasques" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-031.jpg">
+                                    </div>
+                                </article>
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Gîte La Forlane" title="Gîte La Forlane" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-001.jpg">
+                                    </div>
+                                </article>
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Salle d'eau : douche" title="Salle d'eau : douche" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-002.jpg">
+                                    </div>
+                                </article>
+                                <!-- 3eme ligne de photos -->
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Cheminée feu de bois" title="Cheminée feu de bois" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-005.jpg">
+                                    </div>
+                                </article>
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Salon avec canapés et fauteuils" title="Salon avec canapés et fauteuils" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-027.jpg">
+                                    </div>
+                                </article>
+                                <article class="flex flex-wrap w-1/3">
+                                    <div class="w-full p-1 md:p-2">
+                                        <img alt="Salon avec cheminée" title="Salon avec cheminée" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-031.jpg">
+                                    </div>
+                                </article>
+                            </section>
+                        </article>
+                    </section>
+
+
+                    <!-- fin gallery -->
+
+                    <!-- ligne separation -->
+                    <article class="w-full bg-gray-200 h-0.5 mt-0 mb-4">
+                        <div class="bg-gray-400 h-0.5" style="width: 50%"></div>
+                    </article>
+                    <!-- texte -->
+                    <section class="mx-2 text-center">
+                        <h5 class="text-large font-bold text-red-700 text-center">
+                            EXTERIEUR : JARDIN
+                        </h5>
+                        <p>
+                            Accès à l'extérieur de la maison par le salon ou la cuisine.<br> Vue sur la forêt de Lyons-la-Forêt.
+                        </p>
+                        <h5 class="font-bold mt-3">
+                            Terrasse
+                        </h5>
+                        <p>
+                            Terrasse.
+                        </p>
+                        <h5 class="font-bold mt-3">
+                            Coin détente
+                        </h5>
+                        <p>
+                            Petit coin détente : caillebottis en bois et meubles de jardin pour savourer tranquillement un thé.<br> Vue sur la forêt.
+                        </p>
+                    </section>
+
+                    <!-- ligne separation -->
+                    <article class="w-full bg-gray-200 h-0.5 mt-5 mb-2">
+                        <div class="bg-gray-400 h-0.5" style="width: 50%"></div>
+                    </article>
+                </article>
+
+
+
+            </section>
+            <!-- fin des onglets -->
+        </section>
+        <!-- fin du fill method onglets -->
+
+
+
+        <!-- bouton acces vers la gallery -->
+
+        <br>
+        <section class="text-center mb-10">
+            <article>
+                <button type="button" class="inline-block px-6 py-2 border-2 border-red-600 text-red-600 font-bold text-xs leading-tight uppercase rounded-full hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out">
+                    <a href="equipements.html" title="Voir les équipements'">VOIR LES EQUIPEMENTS</a>
+                  </button>
+            </article>
+        </section>
+
+
+
+        <!-- fin container page -->
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="p-4 bg-[#8f4843] sm:p-6 dark:bg-gray-800 mt-12">
+        <section class="md:flex md:justify-between">
+            <!-- logo ou nom -->
+            <article class="mb-6 mx-4 md:mb-0">
+                <a href="index.html" target="_blank" class="flex items-center">
+                    <figure>
+                        <img src="./assets/img/footer/Forlane-logo-03.svg" class="mr-5 h-16" alt="La Forlane">
+                    </figure>
+                </a>
+                <p class="mt-4 text-sm text-white font-medium whitespace-nowrap dark:text-white">
+                    Gîte de charme à Lorleau dans l'Eure, <br>dans la campagne de Normandie proche <br>de Lyons-la-Forêt.<br> Réservez votre location de vacances dans <br>un cadre chaleureux, agréable et stylé <br>et prenez le temps de faire du tourisme
+                    ! <br>Lieu de convivialité idéal pour se réunir <br>entre particuliers ou pour organiser <br>des réunions de familles.
+
+                </p>
+            </article>
+            <!-- conteneur du texte -->
+            <section class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                <!-- colonne autour -->
+                <article>
+                    <h3 class="mb-6 text-base font-extrabold tracking-wider text-white uppercase dark:text-white">
+                        Autour du gîte</h3>
+                    <ul>
+                        <li class="mb-2 text-base">
+                            <a href="https://www.lyons-andelle-tourisme.com/sejourner/toutes-nos-brochures-en-ligne/" alt="Lyons-la-Forêt" target="_blank" class="text-white hover:underline dark:text-gray-400">
+                            Lyons-la-Forêt, tourisme
+                        </a>
+                        </li>
+                        <li class="mb-2 text-base">
+                            <a href="" target="_blank" rel="nofollow" class="text-white hover:underline dark:text-gray-400">
+                            Normandie Tourisme
+                        </a>
+                        </li>
+                        <li class="mb-2 text-base">
+                            <a href="https://www.junobeach.org/fr/" target="_blank" rel="nofollow" class="text-white hover:underline dark:text-gray-400">
+                            Centre Juno Beach, memorial
+                        </a>
+                        </li>
+                        <li class="mb-2 text-base">
+                            <a href="" target="_blank" rel="nofollow" class="text-white hover:underline dark:text-gray-400">
+                            Activités culturelles
+                        </a>
+                        </li>
+                        <li class="mb-2 text-base">
+                            <a href="" target="_blank" rel="nofollow" class="text-white hover:underline dark:text-gray-400">
+                            Gastronomie
+                        </a>
+                        </li>
+                    </ul>
+                </article>
+                <!-- colonne reference -->
+                <article>
+                    <h3 class="mb-6 text-base font-extrabold tracking-wider text-white uppercase dark:text-white">
+                        Nos références</h3>
+                    <ul>
+                        <li class="mb-2">
+                            <a href="https://www.france-voyage.com/locations-vacances/location-lorleau-28693.htm" target="_blank" class="text-white hover:underline dark:text-white">
+                    France Voyage</a>
+                        </li>
+                        <li>
+                            <a href="https://www.gites-de-france-eure.com/location-vacances-Gite-Lorleau-27G750.html" target="_blank" class="text-white hover:underline dark:text-white">
+                    Gîtes de France</a>
+                            <img class="h-12 mt-1" src="./assets/img/footer/GiteDeFrance_4Epis.png" />
+                        </li>
+                    </ul>
+                </article>
+                <!-- contact -->
+                <article>
+                    <h3 class="mb-6 text-base font-extrabold tracking-wider text-white uppercase dark:text-white">Contact</h3>
+                    <ul>
+                        <li class="mb-4">
+                            <p class="text-white hover:underline dark:text-white">
+                                La Forlane : Jean-Luc et Maria</p>
+                        </li>
+                        <li>
+                            <a href="mailto:gite.laforlane@gmail.com" target="_blank" class="text-white hover:underline dark:text-white">gite.laforlane@gmail.com</a><br>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <!-- fin conteneur flex -->
+        </section>
+
+        <!-- partie photos -->
+        <section class="container p-4 mt-4 md:justify-center">
+            <!-- zone photos -->
+            <article class="grid lg:grid-cols-6 md:grid-cols-3 gap-4 sm:h-1/4">
+                <!-- img 1 -->
+                <section class="lg:mb-0 mb-2">
+                    <img src="./assets/img/forlane/Forlane-006.jpg" class="md:w-full md:h-full rounded-none w-96 h-60 object-cover justify-self-center" />
+                </section>
+                <!-- img 2 -->
+                <section class="lg:mb-0 mb-2">
+                    <img src="./assets/img/forlane/Forlane-004.jpg" class="w-full rounded-none" />
+                </section>
+                <!-- img 3 -->
+                <section class="lg:mb-0 mb-2">
+                    <img src="./assets/img/forlane/Forlane-015.jpg" class="w-full rounded-none" />
+                </section>
+                <!-- img 4 -->
+                <section class="lg:mb-0 mb-2">
+                    <img src="./assets/img/forlane/Forlane-008.jpg" class="w-full rounded-none" />
+                </section>
+                <!-- img 5 -->
+                <section class="lg:mb-0 mb-2">
+                    <img src="./assets/img/forlane/Forlane-016.jpg" class="w-full rounded-none" />
+                </section>
+                <!-- img 6 -->
+                <section class="lg:mb-0 mb-2">
+                    <img src="./assets/img/forlane/Forlane-022.jpg" class="w-full rounded-none" />
+                </section>
+            </article>
+        </section>
+
+        <!-- fin partie photos -->
+
+        <!-- reseaux sociaux -->
+        <hr class="my-4 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-4">
+        <!-- credits -->
+        <section class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-xs text-white sm:text-center dark:text-gray-200">© 2022
+            . All Rights Reserved. / La Forlane, JL Lecomte.
+        </span>
+            <!-- pictos reseaux -->
+            <article class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                <!-- facebook -->
+                <a href="https://www.facebook.com/La-Forlane-504084072966711/?ref=page_internal" class="text-white hover:text-gray-200 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg>
+                </a>
+                <!-- instagram -->
+                <a href="#" class="text-white hover:text-gray-200 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd"></path></svg>
+                </a>
+            </article>
+        </section>
+
+    </footer>
+    <!-- fin FOOTER -->
+    </section>
+
+
+    <!-- Scroll to top button -->
+
+    <div id="back2Top" class="bg-gray-300 text-center float-right cursor-pointer p-2 fixed right-5 bottom-5 fas fa-arrow-up">
+    </div>
+
+    <script>
+        {
+            const back2Top = document.querySelector('#back2Top');
+            back2Top.addEventListener('click', (e) => {
+                e.preventDefault();
+                window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+    </script>
+    <!-- Fin Scroll to Top button-->
+
+</body>
+
+</html>
