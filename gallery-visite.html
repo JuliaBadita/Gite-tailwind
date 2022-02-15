@@ -1,10 +1,23 @@
 <!doctype html>
-<html>
-
+<html lang="en-US-fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <title>La Forlane Gîte normand à Lorleau</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_GB" />
+  <meta property="og:title" content="Autour du gîte La Forlane" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
@@ -16,6 +29,7 @@
         @layer utilities { .content-auto { content-visibility: auto; } }
     </style>
     <script src="https://unpkg.com/flowbite@1.3.3/dist/flowbite.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
 </head>
 
@@ -60,9 +74,9 @@
 
                         <!-- Primary Navbar items -->
                         <article class="hidden lg:flex items-center space-x-1">
-                            <a href="index.html" class="p-7 px-3 text-black bg-[#cfc85f]  font-semibold ">Accueil</a>
+                            <a href="index.html" class=" py-7 px-3 text-white font-semibold hover:bg-black  transition duration-300s">Accueil</a>
                             <a href="equipements.html" class=" py-7 px-3 text-white font-semibold hover:bg-black  transition duration-300">Equipements</a>
-                            <a href="gallery-visite.html" class="p-7 px-3 text-white font-semibold hover:bg-black  transition duration-300">Galerie Photos</a>
+                            <a href="gallery-visite.html" class="p-7 px-3 text-black bg-[#cfc85f]  font-semibold ">Galerie Photos</a>
                             <a href="history.html" class="p-7 px-3 text-white font-semibold hover:bg-black transition duration-300">Histoire du gîte</a>
                             <a href="around.html" class="p-7 px-3 text-white font-semibold hover:bg-black transition duration-300">Autour du gîte</a>
                             <a href="reservation.html" class="p-7 px-3 text-white font-semibold hover:bg-black transition duration-300">Réservation</a>
@@ -101,9 +115,9 @@
             <!-- mobile menu -->
             <article class="hidden mobile-menu">
                 <ul>
-                    <li><a href="index.html" class="block text-sm px-2 py-4 text-black bg-[#cfc85f] font-semibold"> Accueil du Gîte La Forlane</a></li>
+                    <li><a href="index.html" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300"> Accueil du Gîte La Forlane</a></li>
                     <li><a href="#services" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300">Equipements</a></li>
-                    <li class="active"><a href="gallery-visite.html" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300">Galerie Photos</a></li>
+                    <li><a href="gallery-visite.html" class="block text-sm px-2 py-4 text-black bg-[#cfc85f] font-semibold">Galerie Photos</a></li>
                     <li><a href="history.html" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300">Histoire du Gîte</a></li>
                     <li><a href="around.html" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300">Autour du Gîte</a></li>
                     <li><a href="#contact" class="block text-sm px-2 py-4 text-white hover:bg-black transition duration-300">Réservation</a></li>
@@ -113,14 +127,13 @@
 
         </nav>
 
-
         <!-- fin NAVBAR -->
 
         <!-- fil d'ariane -->
         <article class="flex mt-1 mx-7" aria-label="Breadcrumb">
             <ol class="inline-flex items-center space-x-1 md:space-x-3">
                 <li class="inline-flex items-center">
-                    <a href="#" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
+                    <a href="index.html" class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white">
                         <svg class="mr-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>                        Accueil La Forlane
                     </a>
                 </li>
@@ -134,7 +147,7 @@
                 <li aria-current="page">
                     <div class="flex items-center">
                         <svg class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
-                        <span class="ml-1 text-sm font-medium text-gray-400 md:ml-2 dark:text-gray-500">Gallery : visite de La Forlane</span>
+                        <span class="ml-1 text-sm font-medium text-gray-400 md:ml-2 dark:text-gray-500">Galerie : visite de La Forlane</span>
                     </div>
                 </li>
             </ol>
@@ -235,49 +248,49 @@
                             <section class="flex flex-wrap -m-1 md:-m-2">
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Entrée et vue sur la cuisine" title="Entrée et vue sur la cuisine" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-007.jpg">
+                                        <img alt="Entrée et vue sur la cuisine" title="Entrée et vue sur la cuisine" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-007.jpg">
                                     </div>
                                 </article>
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Cuisine et Salle à manger" title="Cuisine et salle à manger" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-004.jpg">
+                                        <img alt="Cuisine et Salle à manger" title="Cuisine et salle à manger" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-004.jpg">
                                     </div>
                                 </article>
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Cuisine et salle à manger" title="Cuisine et salle à manger" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-026.jpg">
+                                        <img alt="Cuisine et salle à manger" title="Cuisine et salle à manger" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-026.jpg">
                                     </div>
                                 </article>
                                 <!-- 2eme ligne de photos -->
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Salle d'eau : doubles vasques" title="Salle d'eau : doubles vasques" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-022.jpg">
+                                        <img alt="Salle d'eau : doubles vasques" title="Salle d'eau : doubles vasques" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-022.jpg">
                                     </div>
                                 </article>
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-011.jpg">
+                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-011.jpg">
                                     </div>
                                 </article>
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Salle d'eau : douche" title="Salle d'eau : douche" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-021.jpg">
+                                        <img alt="Salle d'eau : douche" title="Salle d'eau : douche" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-021.jpg">
                                     </div>
                                 </article>
                                 <!-- 3eme ligne de photos -->
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Cheminée feu de bois" title="Cheminée feu de bois" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-009.jpg">
+                                        <img alt="Cheminée feu de bois" title="Cheminée feu de bois" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-009.jpg">
                                     </div>
                                 </article>
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Salon avec canapés et fauteuils" title="Salon avec canapés et fauteuils" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-006.jpg">
+                                        <img alt="Salon avec canapés et fauteuils" title="Salon avec canapés et fauteuils" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-006.jpg">
                                     </div>
                                 </article>
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Salon avec cheminée" title="Salon avec cheminée" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-008.jpg">
+                                        <img alt="Salon avec cheminée" title="Salon avec cheminée" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-008.jpg">
                                     </div>
                                 </article>
                             </section>
@@ -349,49 +362,49 @@
                             <section class="flex flex-wrap -m-1 md:-m-2">
                                 <article class="flex flex-wrap w-1/3">
                                     <figure class="w-full p-1 md:p-2">
-                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-014.jpg">
+                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-014.jpg">
                                     </figure>
                                 </article>
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-015.jpg">
+                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-015.jpg">
                                     </div>
                                 </article>
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-016.jpg">
+                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-016.jpg">
                                     </div>
                                 </article>
                                 <!-- 2eme ligne de photos -->
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-017.jpg">
+                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-017.jpg">
                                     </div>
                                 </article>
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Salle de bain  baignoire" title="Salle de bain : baignoire" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-023.jpg">
+                                        <img alt="Salle de bain  baignoire" title="Salle de bain : baignoire" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-023.jpg">
                                     </div>
                                 </article>
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-019.jpg">
+                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-019.jpg">
                                     </div>
                                 </article>
                                 <!-- 3eme ligne de photos -->
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-019.jpg">
+                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-019.jpg">
                                     </div>
                                 </article>
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-016.jpg">
+                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-016.jpg">
                                     </div>
                                 </article>
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-017.jpg">
+                                        <img alt="Chambre" title="Chambre" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-017.jpg">
                                     </div>
                                 </article>
                             </section>
@@ -462,49 +475,49 @@
                             <section class="flex flex-wrap -m-1 md:-m-2">
                                 <article class="flex flex-wrap w-1/3">
                                     <figure class="w-full p-1 md:p-2">
-                                        <img alt="Vue du jardin" title="Vue du jardin : balançoires" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-002.jpg">
+                                        <img alt="Vue du jardin" title="Vue du jardin : balançoires" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-002.jpg">
                                     </figure>
                                 </article>
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Coin détente : caillebottis et meubles de jardin" title="Coin détente : caillebottis et meubles de jardin" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-005.jpg">
+                                        <img alt="Coin détente : caillebottis et meubles de jardin" title="Coin détente : caillebottis et meubles de jardin" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-005.jpg">
                                     </div>
                                 </article>
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Cuisine et salle à manger" title="Cuisine et salle à manger" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-027.jpg">
+                                        <img alt="Cuisine et salle à manger" title="Cuisine et salle à manger" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-027.jpg">
                                     </div>
                                 </article>
                                 <!-- 2eme ligne de photos -->
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Salle d'eau : doubles vasques" title="Salle d'eau : doubles vasques" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-031.jpg">
+                                        <img alt="Salle d'eau : doubles vasques" title="Salle d'eau : doubles vasques" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-031.jpg">
                                     </div>
                                 </article>
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Gîte La Forlane" title="Gîte La Forlane" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-001.jpg">
+                                        <img alt="Gîte La Forlane" title="Gîte La Forlane" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-001.jpg">
                                     </div>
                                 </article>
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Salle d'eau : douche" title="Salle d'eau : douche" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-002.jpg">
+                                        <img alt="Salle d'eau : douche" title="Salle d'eau : douche" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-002.jpg">
                                     </div>
                                 </article>
                                 <!-- 3eme ligne de photos -->
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Cheminée feu de bois" title="Cheminée feu de bois" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-005.jpg">
+                                        <img alt="Cheminée feu de bois" title="Cheminée feu de bois" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-005.jpg">
                                     </div>
                                 </article>
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Salon avec canapés et fauteuils" title="Salon avec canapés et fauteuils" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-027.jpg">
+                                        <img alt="Salon avec canapés et fauteuils" title="Salon avec canapés et fauteuils" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-027.jpg">
                                     </div>
                                 </article>
                                 <article class="flex flex-wrap w-1/3">
                                     <div class="w-full p-1 md:p-2">
-                                        <img alt="Salon avec cheminée" title="Salon avec cheminée" class="block object-cover object-center w-full h-full rounded-none" src="assets/forlane/Forlane-031.jpg">
+                                        <img alt="Salon avec cheminée" title="Salon avec cheminée" class="block object-cover object-center w-full h-full rounded-none" src="./assets/img/forlane/Forlane-031.jpg">
                                     </div>
                                 </article>
                             </section>
@@ -710,7 +723,7 @@
 
     </footer>
     <!-- fin FOOTER -->
-    </section>
+
 
 
     <!-- Scroll to top button -->
