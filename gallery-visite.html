@@ -106,7 +106,7 @@
 
                         <!-- Website Logo -->
                         <a href="index.html" class="flex px-2">
-                            <img src="./assets/img/Navbar/Forlane-logo-03.svg" alt="Logo" class="h-20 w-24 mr-2 lg:hidden">
+                            <img src="./assets/img/logo/Forlane-logo-03.svg" alt="Logo" class="h-20 w-24 mr-2 lg:hidden">
                         </a>
 
                     </div>
@@ -748,6 +748,17 @@
     </script>
     <!-- Fin Scroll to Top button-->
 
+     <!-- For The Navbar -->
+
+ <script>
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+  
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+  
 </body>
 
 </html>
